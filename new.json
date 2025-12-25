@@ -1,0 +1,4619 @@
+{
+  "characters": [
+    {
+      "name": "Abel",
+      "series": "AOT",
+      "power": 70
+    },
+    {
+      "name": "Annie Leonhart",
+      "series": "AOT",
+      "power": 89
+    },
+    {
+      "name": "Armin Arlert",
+      "series": "AOT",
+      "power": 85
+    },
+    {
+      "name": "Armored Titan",
+      "series": "AOT",
+      "power": 91
+    },
+    {
+      "name": "Attack Titan",
+      "series": "AOT",
+      "power": 94
+    },
+    {
+      "name": "Beast Titan",
+      "series": "AOT",
+      "power": 91
+    },
+    {
+      "name": "Bertholdt Hoover",
+      "series": "AOT",
+      "power": 89
+    },
+    {
+      "name": "Colossus Titan",
+      "series": "AOT",
+      "power": 93
+    },
+    {
+      "name": "Commander Shadis",
+      "series": "AOT",
+      "power": 75
+    },
+    {
+      "name": "Conan",
+      "series": "AOT",
+      "power": 94
+    },
+    {
+      "name": "Daz Bahrns",
+      "series": "AOT",
+      "power": 68
+    },
+    {
+      "name": "Dina Fritz",
+      "series": "AOT",
+      "power": 88
+    },
+    {
+      "name": "Eren Yeager",
+      "series": "AOT",
+      "power": 95
+    },
+    {
+      "name": "Erwin Smith",
+      "series": "AOT",
+      "power": 85
+    },
+    {
+      "name": "Female Titan",
+      "series": "AOT",
+      "power": 89
+    },
+    {
+      "name": "Floch Forster",
+      "series": "AOT",
+      "power": 70
+    },
+    {
+      "name": "Founding Titan",
+      "series": "AOT",
+      "power": 100
+    },
+    {
+      "name": "Frieda Reiss Titan",
+      "series": "AOT",
+      "power": 92
+    },
+    {
+      "name": "Grisha Yeager",
+      "series": "AOT",
+      "power": 82
+    },
+    {
+      "name": "Gunther Schultz",
+      "series": "AOT",
+      "power": 72
+    },
+    {
+      "name": "Hange Zoe",
+      "series": "AOT",
+      "power": 85
+    },
+    {
+      "name": "Historia Reiss",
+      "series": "AOT",
+      "power": 80
+    },
+    {
+      "name": "Ian Dietrich",
+      "series": "AOT",
+      "power": 74
+    },
+    {
+      "name": "Jaw Titan",
+      "series": "AOT",
+      "power": 85
+    },
+    {
+      "name": "Jean Kirstein",
+      "series": "AOT",
+      "power": 78
+    },
+    {
+      "name": "Levi Ackerman",
+      "series": "AOT",
+      "power": 93
+    },
+    {
+      "name": "Marco Bodt",
+      "series": "AOT",
+      "power": 75
+    },
+    {
+      "name": "Mikasa Ackerman",
+      "series": "AOT",
+      "power": 90
+    },
+    {
+      "name": "Mina Carolina",
+      "series": "AOT",
+      "power": 70
+    },
+    {
+      "name": "Moblit Berner",
+      "series": "AOT",
+      "power": 70
+    },
+    {
+      "name": "Nile Dawk",
+      "series": "AOT",
+      "power": 72
+    },
+    {
+      "name": "Oluo Bozado",
+      "series": "AOT",
+      "power": 75
+    },
+    {
+      "name": "Onyankopon",
+      "series": "AOT",
+      "power": 72
+    },
+    {
+      "name": "Paths Eren",
+      "series": "AOT",
+      "power": 99
+    },
+    {
+      "name": "Pieck",
+      "series": "AOT",
+      "power": 87
+    },
+    {
+      "name": "Porco Galliard",
+      "series": "AOT",
+      "power": 88
+    },
+    {
+      "name": "Reiner Braun Colossal",
+      "series": "AOT",
+      "power": 92
+    },
+    {
+      "name": "Rod Reiss",
+      "series": "AOT",
+      "power": 85
+    },
+    {
+      "name": "Samuel Colins",
+      "series": "AOT",
+      "power": 72
+    },
+    {
+      "name": "Sasha Blouse",
+      "series": "AOT",
+      "power": 75
+    },
+    {
+      "name": "Thomas Wagner",
+      "series": "AOT",
+      "power": 68
+    },
+    {
+      "name": "Titan Shifters",
+      "series": "AOT",
+      "power": 90
+    },
+    {
+      "name": "Wall Maria",
+      "series": "AOT",
+      "power": 60
+    },
+    {
+      "name": "Willy Tybur",
+      "series": "AOT",
+      "power": 88
+    },
+    {
+      "name": "Yelena",
+      "series": "AOT",
+      "power": 78
+    },
+    {
+      "name": "Ymir Fritz",
+      "series": "AOT",
+      "power": 99
+    },
+    {
+      "name": "Azan",
+      "series": "Berserk",
+      "power": 75
+    },
+    {
+      "name": "Casca",
+      "series": "Berserk",
+      "power": 88
+    },
+    {
+      "name": "Conrad",
+      "series": "Berserk",
+      "power": 93
+    },
+    {
+      "name": "Donovan",
+      "series": "Berserk",
+      "power": 45
+    },
+    {
+      "name": "Elihu",
+      "series": "Berserk",
+      "power": 70
+    },
+    {
+      "name": "Erica",
+      "series": "Berserk",
+      "power": 60
+    },
+    {
+      "name": "Farnese",
+      "series": "Berserk",
+      "power": 70
+    },
+    {
+      "name": "Femto",
+      "series": "Berserk",
+      "power": 98
+    },
+    {
+      "name": "Gaiseric",
+      "series": "Berserk",
+      "power": 95
+    },
+    {
+      "name": "Gambino",
+      "series": "Berserk",
+      "power": 50
+    },
+    {
+      "name": "Garlic Jr",
+      "series": "Berserk",
+      "power": 65
+    },
+    {
+      "name": "Griffith",
+      "series": "Berserk",
+      "power": 95
+    },
+    {
+      "name": "Gromory",
+      "series": "Berserk",
+      "power": 85
+    },
+    {
+      "name": "Guilhem",
+      "series": "Berserk",
+      "power": 75
+    },
+    {
+      "name": "Guts Black Swordsman",
+      "series": "Berserk",
+      "power": 95
+    },
+    {
+      "name": "Irvine",
+      "series": "Berserk",
+      "power": 86
+    },
+    {
+      "name": "Isidoro",
+      "series": "Berserk",
+      "power": 45
+    },
+    {
+      "name": "Judeau",
+      "series": "Berserk",
+      "power": 72
+    },
+    {
+      "name": "Kushan",
+      "series": "Berserk",
+      "power": 90
+    },
+    {
+      "name": "Locus",
+      "series": "Berserk",
+      "power": 87
+    },
+    {
+      "name": "Nosferatu Zodd Hundred-Man Slayer",
+      "series": "Berserk",
+      "power": 94
+    },
+    {
+      "name": "Pippin",
+      "series": "Berserk",
+      "power": 75
+    },
+    {
+      "name": "Puck",
+      "series": "Berserk",
+      "power": 75
+    },
+    {
+      "name": "Rakshas",
+      "series": "Berserk",
+      "power": 89
+    },
+    {
+      "name": "Rickert",
+      "series": "Berserk",
+      "power": 50
+    },
+    {
+      "name": "Schierke",
+      "series": "Berserk",
+      "power": 75
+    },
+    {
+      "name": "Serpico",
+      "series": "Berserk",
+      "power": 82
+    },
+    {
+      "name": "Silat",
+      "series": "Berserk",
+      "power": 87
+    },
+    {
+      "name": "Skeleton Knight",
+      "series": "Berserk",
+      "power": 96
+    },
+    {
+      "name": "Slan",
+      "series": "Berserk",
+      "power": 92
+    },
+    {
+      "name": "Sonia",
+      "series": "Berserk",
+      "power": 60
+    },
+    {
+      "name": "Ubik",
+      "series": "Berserk",
+      "power": 94
+    },
+    {
+      "name": "Void",
+      "series": "Berserk",
+      "power": 96
+    },
+    {
+      "name": "Wyald",
+      "series": "Berserk",
+      "power": 88
+    },
+    {
+      "name": "Zodd",
+      "series": "Berserk",
+      "power": 93
+    },
+    {
+      "name": "Acier Silva",
+      "series": "Black Clover",
+      "power": 92
+    },
+    {
+      "name": "Alecdora",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Asta",
+      "series": "Black Clover",
+      "power": 94
+    },
+    {
+      "name": "Catherine",
+      "series": "Black Clover",
+      "power": 82
+    },
+    {
+      "name": "Dante Zogratis",
+      "series": "Black Clover",
+      "power": 93
+    },
+    {
+      "name": "Domina Cole",
+      "series": "Black Clover",
+      "power": 81
+    },
+    {
+      "name": "Dorothy Unsworth",
+      "series": "Black Clover",
+      "power": 88
+    },
+    {
+      "name": "Fana",
+      "series": "Black Clover",
+      "power": 90
+    },
+    {
+      "name": "Fanzell Kruger",
+      "series": "Black Clover",
+      "power": 87
+    },
+    {
+      "name": "Finral",
+      "series": "Black Clover",
+      "power": 83
+    },
+    {
+      "name": "Fuegoleon",
+      "series": "Black Clover",
+      "power": 90
+    },
+    {
+      "name": "Gauche",
+      "series": "Black Clover",
+      "power": 86
+    },
+    {
+      "name": "Gordon Agrippa",
+      "series": "Black Clover",
+      "power": 81
+    },
+    {
+      "name": "Grey",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Henry Legolant",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Julius Novachrono",
+      "series": "Black Clover",
+      "power": 96
+    },
+    {
+      "name": "Kiato",
+      "series": "Black Clover",
+      "power": 75
+    },
+    {
+      "name": "Kikka Town Guard",
+      "series": "Black Clover",
+      "power": 50
+    },
+    {
+      "name": "Klaus",
+      "series": "Black Clover",
+      "power": 81
+    },
+    {
+      "name": "Ladros",
+      "series": "Black Clover",
+      "power": 88
+    },
+    {
+      "name": "Langris",
+      "series": "Black Clover",
+      "power": 91
+    },
+    {
+      "name": "Leotis Hofler",
+      "series": "Black Clover",
+      "power": 79
+    },
+    {
+      "name": "Licht",
+      "series": "Black Clover",
+      "power": 95
+    },
+    {
+      "name": "Lily Aquaria",
+      "series": "Black Clover",
+      "power": 80
+    },
+    {
+      "name": "Luck Voltia",
+      "series": "Black Clover",
+      "power": 87
+    },
+    {
+      "name": "Magna Swing",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Marie Adlai",
+      "series": "Black Clover",
+      "power": 50
+    },
+    {
+      "name": "Marlowe",
+      "series": "Black Clover",
+      "power": 70
+    },
+    {
+      "name": "Mereoleona",
+      "series": "Black Clover",
+      "power": 93
+    },
+    {
+      "name": "Mimosa",
+      "series": "Black Clover",
+      "power": 80
+    },
+    {
+      "name": "Miura",
+      "series": "Black Clover",
+      "power": 89
+    },
+    {
+      "name": "Noelle Silva",
+      "series": "Black Clover",
+      "power": 90
+    },
+    {
+      "name": "Nozel",
+      "series": "Black Clover",
+      "power": 89
+    },
+    {
+      "name": "Patolli",
+      "series": "Black Clover",
+      "power": 94
+    },
+    {
+      "name": "Patri",
+      "series": "Black Clover",
+      "power": 95
+    },
+    {
+      "name": "Raia Eas",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Rhya",
+      "series": "Black Clover",
+      "power": 92
+    },
+    {
+      "name": "Sally",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Sekke",
+      "series": "Black Clover",
+      "power": 75
+    },
+    {
+      "name": "Setsuno",
+      "series": "Black Clover",
+      "power": 88
+    },
+    {
+      "name": "Sol Marron",
+      "series": "Black Clover",
+      "power": 82
+    },
+    {
+      "name": "Swallowtail",
+      "series": "Black Clover",
+      "power": 78
+    },
+    {
+      "name": "Valtos",
+      "series": "Black Clover",
+      "power": 80
+    },
+    {
+      "name": "Vanessa",
+      "series": "Black Clover",
+      "power": 87
+    },
+    {
+      "name": "Vetto",
+      "series": "Black Clover",
+      "power": 87
+    },
+    {
+      "name": "Yami Sukehiro",
+      "series": "Black Clover",
+      "power": 94
+    },
+    {
+      "name": "Yami's Father",
+      "series": "Black Clover",
+      "power": 85
+    },
+    {
+      "name": "Yuno",
+      "series": "Black Clover",
+      "power": 93
+    },
+    {
+      "name": "Zagred",
+      "series": "Black Clover",
+      "power": 94
+    },
+    {
+      "name": "Zora Ideale",
+      "series": "Black Clover",
+      "power": 80
+    },
+    {
+      "name": "Aaroniero Arruruerie",
+      "series": "Bleach",
+      "power": 78
+    },
+    {
+      "name": "Aizen Final Form",
+      "series": "Bleach",
+      "power": 100
+    },
+    {
+      "name": "Askin",
+      "series": "Bleach",
+      "power": 92
+    },
+    {
+      "name": "Ayon",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Barragan",
+      "series": "Bleach",
+      "power": 91
+    },
+    {
+      "name": "Bazz-B",
+      "series": "Bleach",
+      "power": 89
+    },
+    {
+      "name": "Byakuya Kuchiki",
+      "series": "Bleach",
+      "power": 92
+    },
+    {
+      "name": "Chad",
+      "series": "Bleach",
+      "power": 82
+    },
+    {
+      "name": "Cirucci Sanderwicci",
+      "series": "Bleach",
+      "power": 80
+    },
+    {
+      "name": "Dordoni Alessandro Del Socacco",
+      "series": "Bleach",
+      "power": 82
+    },
+    {
+      "name": "Gerard Valkyrie",
+      "series": "Bleach",
+      "power": 96
+    },
+    {
+      "name": "Gin Ichimaru",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Grimmjow",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Harribel",
+      "series": "Bleach",
+      "power": 89
+    },
+    {
+      "name": "Haschwalth",
+      "series": "Bleach",
+      "power": 95
+    },
+    {
+      "name": "Ichibe Hyosube",
+      "series": "Bleach",
+      "power": 98
+    },
+    {
+      "name": "Ichigo Kurosaki Final",
+      "series": "Bleach",
+      "power": 100
+    },
+    {
+      "name": "Ikkaku Madarame",
+      "series": "Bleach",
+      "power": 88
+    },
+    {
+      "name": "Inoe Orihime",
+      "series": "Bleach",
+      "power": 82
+    },
+    {
+      "name": "Isane Koetsu",
+      "series": "Bleach",
+      "power": 80
+    },
+    {
+      "name": "Isshin Kurosaki Bankai",
+      "series": "Bleach",
+      "power": 97
+    },
+    {
+      "name": "Izuru Kira",
+      "series": "Bleach",
+      "power": 84
+    },
+    {
+      "name": "Jyushiro Ukitake",
+      "series": "Bleach",
+      "power": 91
+    },
+    {
+      "name": "Kaien Shiba",
+      "series": "Bleach",
+      "power": 87
+    },
+    {
+      "name": "Karin Kurosaki",
+      "series": "Bleach",
+      "power": 20
+    },
+    {
+      "name": "Kenpachi Zaraki Bankai",
+      "series": "Bleach",
+      "power": 99
+    },
+    {
+      "name": "Kisuke Urahara Bankai",
+      "series": "Bleach",
+      "power": 96
+    },
+    {
+      "name": "Lille Barro",
+      "series": "Bleach",
+      "power": 94
+    },
+    {
+      "name": "Lilynette",
+      "series": "Bleach",
+      "power": 85
+    },
+    {
+      "name": "Marechiyo Omaeda",
+      "series": "Bleach",
+      "power": 80
+    },
+    {
+      "name": "Mayuri Kurotsuchi",
+      "series": "Bleach",
+      "power": 91
+    },
+    {
+      "name": "Menoly Mallia",
+      "series": "Bleach",
+      "power": 75
+    },
+    {
+      "name": "Nanao Ise Bankai",
+      "series": "Bleach",
+      "power": 85
+    },
+    {
+      "name": "Nenatsukayo",
+      "series": "Bleach",
+      "power": 82
+    },
+    {
+      "name": "Nnoitra Gilga",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Old Man Zangetsu",
+      "series": "Bleach",
+      "power": 98
+    },
+    {
+      "name": "Orihime Inoue",
+      "series": "Bleach",
+      "power": 80
+    },
+    {
+      "name": "Pernida Paakmoras",
+      "series": "Bleach",
+      "power": 95
+    },
+    {
+      "name": "Privaron Espada Zero",
+      "series": "Bleach",
+      "power": 88
+    },
+    {
+      "name": "Rangiku Matsumoto",
+      "series": "Bleach",
+      "power": 86
+    },
+    {
+      "name": "Rukia Kuchiki Bankai",
+      "series": "Bleach",
+      "power": 91
+    },
+    {
+      "name": "Shuhei Hisagi",
+      "series": "Bleach",
+      "power": 85
+    },
+    {
+      "name": "Shunsui Kyoraku",
+      "series": "Bleach",
+      "power": 94
+    },
+    {
+      "name": "Soifon",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Stark",
+      "series": "Bleach",
+      "power": 92
+    },
+    {
+      "name": "Szayel Aporro Granz",
+      "series": "Bleach",
+      "power": 91
+    },
+    {
+      "name": "Toshiro Hitsugaya Bankai",
+      "series": "Bleach",
+      "power": 94
+    },
+    {
+      "name": "Ulquiorra",
+      "series": "Bleach",
+      "power": 93
+    },
+    {
+      "name": "Unohana",
+      "series": "Bleach",
+      "power": 93
+    },
+    {
+      "name": "Uryu Ishida",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "White Ichigo",
+      "series": "Bleach",
+      "power": 90
+    },
+    {
+      "name": "Yamamoto Genryusai Bankai",
+      "series": "Bleach",
+      "power": 100
+    },
+    {
+      "name": "Yhwach",
+      "series": "Bleach",
+      "power": 100
+    },
+    {
+      "name": "Yoruichi Shihoin",
+      "series": "Bleach",
+      "power": 92
+    },
+    {
+      "name": "Yumichika Ayasegawa",
+      "series": "Bleach",
+      "power": 85
+    },
+    {
+      "name": "Yuzu Kurosaki",
+      "series": "Bleach",
+      "power": 10
+    },
+    {
+      "name": "Zangetsu",
+      "series": "Bleach",
+      "power": 95
+    },
+    {
+      "name": "Aki Hayakawa",
+      "series": "CSM",
+      "power": 85
+    },
+    {
+      "name": "Bomb Devil",
+      "series": "CSM",
+      "power": 91
+    },
+    {
+      "name": "Control Devil",
+      "series": "CSM",
+      "power": 98
+    },
+    {
+      "name": "Cosmo Devil",
+      "series": "CSM",
+      "power": 96
+    },
+    {
+      "name": "Darkness Devil Hybrid",
+      "series": "CSM",
+      "power": 97
+    },
+    {
+      "name": "Denji True Form",
+      "series": "CSM",
+      "power": 97
+    },
+    {
+      "name": "Furanken",
+      "series": "CSM",
+      "power": 92
+    },
+    {
+      "name": "Gun Devil",
+      "series": "CSM",
+      "power": 98
+    },
+    {
+      "name": "Hell Devil",
+      "series": "CSM",
+      "power": 98
+    },
+    {
+      "name": "Himeno",
+      "series": "CSM",
+      "power": 80
+    },
+    {
+      "name": "Humanity Devil",
+      "series": "CSM",
+      "power": 99
+    },
+    {
+      "name": "Justice Devil",
+      "series": "CSM",
+      "power": 95
+    },
+    {
+      "name": "Katana Man",
+      "series": "CSM",
+      "power": 86
+    },
+    {
+      "name": "Kishibe",
+      "series": "CSM",
+      "power": 90
+    },
+    {
+      "name": "Kobeni",
+      "series": "CSM",
+      "power": 75
+    },
+    {
+      "name": "Leech Devil",
+      "series": "CSM",
+      "power": 72
+    },
+    {
+      "name": "Makima Final Form",
+      "series": "CSM",
+      "power": 99
+    },
+    {
+      "name": "Nayuta",
+      "series": "CSM",
+      "power": 97
+    },
+    {
+      "name": "Nuclear Weapon Devil",
+      "series": "CSM",
+      "power": 93
+    },
+    {
+      "name": "Pochita",
+      "series": "CSM",
+      "power": 99
+    },
+    {
+      "name": "Power",
+      "series": "CSM",
+      "power": 87
+    },
+    {
+      "name": "Primal Fear",
+      "series": "CSM",
+      "power": 94
+    },
+    {
+      "name": "Quanxi",
+      "series": "CSM",
+      "power": 92
+    },
+    {
+      "name": "Reze",
+      "series": "CSM",
+      "power": 89
+    },
+    {
+      "name": "Shark Teeth Devil",
+      "series": "CSM",
+      "power": 87
+    },
+    {
+      "name": "Typhon Devil",
+      "series": "CSM",
+      "power": 88
+    },
+    {
+      "name": "War Devil",
+      "series": "CSM",
+      "power": 96
+    },
+    {
+      "name": "Yoru",
+      "series": "CSM",
+      "power": 95
+    },
+    {
+      "name": "Zohakuten",
+      "series": "CSM",
+      "power": 94
+    },
+    {
+      "name": "Zombie Devil",
+      "series": "CSM",
+      "power": 88
+    },
+    {
+      "name": "Anya Alstreim",
+      "series": "Code Geass",
+      "power": 85
+    },
+    {
+      "name": "Bismarck Waldstein",
+      "series": "Code Geass",
+      "power": 91
+    },
+    {
+      "name": "Cc",
+      "series": "Code Geass",
+      "power": 95
+    },
+    {
+      "name": "Clovis Prince",
+      "series": "Code Geass",
+      "power": 82
+    },
+    {
+      "name": "Euphemia Massacre",
+      "series": "Code Geass",
+      "power": 90
+    },
+    {
+      "name": "Gino Weinberg",
+      "series": "Code Geass",
+      "power": 84
+    },
+    {
+      "name": "Jeremiah Gottwald Final",
+      "series": "Code Geass",
+      "power": 93
+    },
+    {
+      "name": "Kaguya Sumeragi",
+      "series": "Code Geass",
+      "power": 75
+    },
+    {
+      "name": "Kallen",
+      "series": "Code Geass",
+      "power": 87
+    },
+    {
+      "name": "Lelouch vi Britannia Emperor",
+      "series": "Code Geass",
+      "power": 95
+    },
+    {
+      "name": "Milly Ashford",
+      "series": "Code Geass",
+      "power": 40
+    },
+    {
+      "name": "Monica Kruszewski",
+      "series": "Code Geass",
+      "power": 80
+    },
+    {
+      "name": "Nina Einstein Nuke",
+      "series": "Code Geass",
+      "power": 88
+    },
+    {
+      "name": "Phineas",
+      "series": "Code Geass",
+      "power": 85
+    },
+    {
+      "name": "Rakshata Chawla",
+      "series": "Code Geass",
+      "power": 70
+    },
+    {
+      "name": "Rolo Lamperouge",
+      "series": "Code Geass",
+      "power": 86
+    },
+    {
+      "name": "Schneizel Britannia",
+      "series": "Code Geass",
+      "power": 94
+    },
+    {
+      "name": "Shirley",
+      "series": "Code Geass",
+      "power": 30
+    },
+    {
+      "name": "Suzaku Kururugi Final",
+      "series": "Code Geass",
+      "power": 93
+    },
+    {
+      "name": "Villetta Nu",
+      "series": "Code Geass",
+      "power": 78
+    },
+    {
+      "name": "Zero",
+      "series": "Code Geass",
+      "power": 88
+    },
+    {
+      "name": "Andy",
+      "series": "Cowboy Bebop",
+      "power": 68
+    },
+    {
+      "name": "Decker",
+      "series": "Cowboy Bebop",
+      "power": 65
+    },
+    {
+      "name": "Edward Wong",
+      "series": "Cowboy Bebop",
+      "power": 65
+    },
+    {
+      "name": "Ein Dog",
+      "series": "Cowboy Bebop",
+      "power": 70
+    },
+    {
+      "name": "Faye Valentine",
+      "series": "Cowboy Bebop",
+      "power": 75
+    },
+    {
+      "name": "Gomez",
+      "series": "Cowboy Bebop",
+      "power": 72
+    },
+    {
+      "name": "Grencia Mars Elijah Discount",
+      "series": "Cowboy Bebop",
+      "power": 70
+    },
+    {
+      "name": "Jet Black",
+      "series": "Cowboy Bebop",
+      "power": 78
+    },
+    {
+      "name": "Julia",
+      "series": "Cowboy Bebop",
+      "power": 72
+    },
+    {
+      "name": "Laughing Bull",
+      "series": "Cowboy Bebop",
+      "power": 50
+    },
+    {
+      "name": "Ren Amamiya",
+      "series": "Cowboy Bebop",
+      "power": 60
+    },
+    {
+      "name": "Rocco Bonnaro",
+      "series": "Cowboy Bebop",
+      "power": 68
+    },
+    {
+      "name": "Shin",
+      "series": "Cowboy Bebop",
+      "power": 75
+    },
+    {
+      "name": "Spike Spiegel Final",
+      "series": "Cowboy Bebop",
+      "power": 82
+    },
+    {
+      "name": "Vicious Final",
+      "series": "Cowboy Bebop",
+      "power": 82
+    },
+    {
+      "name": "Aizawa Soichiro",
+      "series": "Death Note",
+      "power": 22
+    },
+    {
+      "name": "Antony Rester",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "Halle Lidner",
+      "series": "Death Note",
+      "power": 17
+    },
+    {
+      "name": "Kyousuke Higuchi",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "L",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "Light Yagami",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "Matsuda Touta",
+      "series": "Death Note",
+      "power": 18
+    },
+    {
+      "name": "Matt",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "Mello",
+      "series": "Death Note",
+      "power": 25
+    },
+    {
+      "name": "Midori Minato",
+      "series": "Death Note",
+      "power": 10
+    },
+    {
+      "name": "Minoru Tanaka",
+      "series": "Death Note",
+      "power": 12
+    },
+    {
+      "name": "Misa Amane",
+      "series": "Death Note",
+      "power": 10
+    },
+    {
+      "name": "Naomi Misora",
+      "series": "Death Note",
+      "power": 18
+    },
+    {
+      "name": "Near",
+      "series": "Death Note",
+      "power": 20
+    },
+    {
+      "name": "Raye Penber",
+      "series": "Death Note",
+      "power": 20
+    },
+    {
+      "name": "Rem",
+      "series": "Death Note",
+      "power": 96
+    },
+    {
+      "name": "Ren Matsukichi",
+      "series": "Death Note",
+      "power": 20
+    },
+    {
+      "name": "Ryuk",
+      "series": "Death Note",
+      "power": 98
+    },
+    {
+      "name": "Shingo Asano",
+      "series": "Death Note",
+      "power": 12
+    },
+    {
+      "name": "Shinto",
+      "series": "Death Note",
+      "power": 18
+    },
+    {
+      "name": "Soichiro Yagami",
+      "series": "Death Note",
+      "power": 25
+    },
+    {
+      "name": "Teru Mikami",
+      "series": "Death Note",
+      "power": 18
+    },
+    {
+      "name": "Yagami Sachiko",
+      "series": "Death Note",
+      "power": 15
+    },
+    {
+      "name": "Yoshiyuki Watari",
+      "series": "Death Note",
+      "power": 30
+    },
+    {
+      "name": "Yotsuba Executives",
+      "series": "Death Note",
+      "power": 20
+    },
+    {
+      "name": "Akaza",
+      "series": "Demon Slayer",
+      "power": 93
+    },
+    {
+      "name": "Doma",
+      "series": "Demon Slayer",
+      "power": 94
+    },
+    {
+      "name": "Douma Upper Moon",
+      "series": "Demon Slayer",
+      "power": 95
+    },
+    {
+      "name": "Enmu",
+      "series": "Demon Slayer",
+      "power": 88
+    },
+    {
+      "name": "Giyuu Tomioka",
+      "series": "Demon Slayer",
+      "power": 91
+    },
+    {
+      "name": "Gyokko",
+      "series": "Demon Slayer",
+      "power": 88
+    },
+    {
+      "name": "Gyomei Himejima",
+      "series": "Demon Slayer",
+      "power": 94
+    },
+    {
+      "name": "Inosuke Hashibira",
+      "series": "Demon Slayer",
+      "power": 86
+    },
+    {
+      "name": "Kamanue",
+      "series": "Demon Slayer",
+      "power": 72
+    },
+    {
+      "name": "Kanjiro Kamado",
+      "series": "Demon Slayer",
+      "power": 50
+    },
+    {
+      "name": "Kokushibo",
+      "series": "Demon Slayer",
+      "power": 96
+    },
+    {
+      "name": "Kyojuro Rengoku",
+      "series": "Demon Slayer",
+      "power": 92
+    },
+    {
+      "name": "Makomo",
+      "series": "Demon Slayer",
+      "power": 78
+    },
+    {
+      "name": "Mitsuri Kanroji",
+      "series": "Demon Slayer",
+      "power": 88
+    },
+    {
+      "name": "Muichiro Tokito",
+      "series": "Demon Slayer",
+      "power": 91
+    },
+    {
+      "name": "Muzan Kibutsuji",
+      "series": "Demon Slayer",
+      "power": 98
+    },
+    {
+      "name": "Nakime",
+      "series": "Demon Slayer",
+      "power": 90
+    },
+    {
+      "name": "Nezuko Kamado Final",
+      "series": "Demon Slayer",
+      "power": 93
+    },
+    {
+      "name": "Obanai Iguro",
+      "series": "Demon Slayer",
+      "power": 89
+    },
+    {
+      "name": "Rengoku",
+      "series": "Demon Slayer",
+      "power": 91
+    },
+    {
+      "name": "Rui",
+      "series": "Demon Slayer",
+      "power": 87
+    },
+    {
+      "name": "Sabito",
+      "series": "Demon Slayer",
+      "power": 80
+    },
+    {
+      "name": "Sakonji Urokodaki",
+      "series": "Demon Slayer",
+      "power": 88
+    },
+    {
+      "name": "Sanemi Shinazugawa",
+      "series": "Demon Slayer",
+      "power": 92
+    },
+    {
+      "name": "Shinobu Kocho",
+      "series": "Demon Slayer",
+      "power": 85
+    },
+    {
+      "name": "Tanjiro Kamado Final Form",
+      "series": "Demon Slayer",
+      "power": 96
+    },
+    {
+      "name": "Tengen Uzui",
+      "series": "Demon Slayer",
+      "power": 89
+    },
+    {
+      "name": "Tomioka Giyu Demon Slayer",
+      "series": "Demon Slayer",
+      "power": 93
+    },
+    {
+      "name": "Ubuyashiki Kagaya",
+      "series": "Demon Slayer",
+      "power": 85
+    },
+    {
+      "name": "Wakuraba",
+      "series": "Demon Slayer",
+      "power": 75
+    },
+    {
+      "name": "Yoriichi Tsugikuni",
+      "series": "Demon Slayer",
+      "power": 100
+    },
+    {
+      "name": "Yushiro",
+      "series": "Demon Slayer",
+      "power": 80
+    },
+    {
+      "name": "Zenitsu Agatsuma",
+      "series": "Demon Slayer",
+      "power": 86
+    },
+    {
+      "name": "Android 17",
+      "series": "Dragon Ball",
+      "power": 92
+    },
+    {
+      "name": "Bardock",
+      "series": "Dragon Ball",
+      "power": 88
+    },
+    {
+      "name": "Beerus",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Broly Super",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Bulma Armor",
+      "series": "Dragon Ball",
+      "power": 65
+    },
+    {
+      "name": "Caulifla",
+      "series": "Dragon Ball",
+      "power": 93
+    },
+    {
+      "name": "Cell Perfect",
+      "series": "Dragon Ball",
+      "power": 96
+    },
+    {
+      "name": "Chi-Chi",
+      "series": "Dragon Ball",
+      "power": 65
+    },
+    {
+      "name": "Cooler",
+      "series": "Dragon Ball",
+      "power": 90
+    },
+    {
+      "name": "Drum",
+      "series": "Dragon Ball",
+      "power": 68
+    },
+    {
+      "name": "Evil Buu",
+      "series": "Dragon Ball",
+      "power": 93
+    },
+    {
+      "name": "Frieza Black",
+      "series": "Dragon Ball",
+      "power": 99
+    },
+    {
+      "name": "Future Trunks",
+      "series": "Dragon Ball",
+      "power": 91
+    },
+    {
+      "name": "General Blue",
+      "series": "Dragon Ball",
+      "power": 75
+    },
+    {
+      "name": "Gogeta Blue",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Gohan Beast",
+      "series": "Dragon Ball",
+      "power": 98
+    },
+    {
+      "name": "Goku Ultra Instinct",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Hit",
+      "series": "Dragon Ball",
+      "power": 95
+    },
+    {
+      "name": "Janemba",
+      "series": "Dragon Ball",
+      "power": 93
+    },
+    {
+      "name": "Jiren",
+      "series": "Dragon Ball",
+      "power": 99
+    },
+    {
+      "name": "Junior Piccolo",
+      "series": "Dragon Ball",
+      "power": 88
+    },
+    {
+      "name": "Kale Super Saiyan",
+      "series": "Dragon Ball",
+      "power": 94
+    },
+    {
+      "name": "Kefla Legendary",
+      "series": "Dragon Ball",
+      "power": 96
+    },
+    {
+      "name": "Kid Buu",
+      "series": "Dragon Ball",
+      "power": 96
+    },
+    {
+      "name": "King Piccolo",
+      "series": "Dragon Ball",
+      "power": 92
+    },
+    {
+      "name": "Krillin",
+      "series": "Dragon Ball",
+      "power": 80
+    },
+    {
+      "name": "Majin Buu Pink",
+      "series": "Dragon Ball",
+      "power": 95
+    },
+    {
+      "name": "Master Roshi",
+      "series": "Dragon Ball",
+      "power": 75
+    },
+    {
+      "name": "Oolong Pig",
+      "series": "Dragon Ball",
+      "power": 40
+    },
+    {
+      "name": "Piccolo Orange",
+      "series": "Dragon Ball",
+      "power": 92
+    },
+    {
+      "name": "Puar Cat",
+      "series": "Dragon Ball",
+      "power": 35
+    },
+    {
+      "name": "Roshi",
+      "series": "Dragon Ball",
+      "power": 70
+    },
+    {
+      "name": "Tien",
+      "series": "Dragon Ball",
+      "power": 78
+    },
+    {
+      "name": "Toppo",
+      "series": "Dragon Ball",
+      "power": 96
+    },
+    {
+      "name": "Trunks Swordsmanship",
+      "series": "Dragon Ball",
+      "power": 93
+    },
+    {
+      "name": "Vegeta Final Flash",
+      "series": "Dragon Ball",
+      "power": 99
+    },
+    {
+      "name": "Vegito Blue",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Whis",
+      "series": "Dragon Ball",
+      "power": 100
+    },
+    {
+      "name": "Yajirobe",
+      "series": "Dragon Ball",
+      "power": 50
+    },
+    {
+      "name": "Yamcha Wolf Fang",
+      "series": "Dragon Ball",
+      "power": 72
+    },
+    {
+      "name": "Zamasu",
+      "series": "Dragon Ball",
+      "power": 94
+    },
+    {
+      "name": "Alexander Nina",
+      "series": "FMAB",
+      "power": 20
+    },
+    {
+      "name": "Alphonse Elric Armor",
+      "series": "FMAB",
+      "power": 89
+    },
+    {
+      "name": "Armstrong",
+      "series": "FMAB",
+      "power": 86
+    },
+    {
+      "name": "Bradley Wrath",
+      "series": "FMAB",
+      "power": 94
+    },
+    {
+      "name": "Buccaneer Automail",
+      "series": "FMAB",
+      "power": 85
+    },
+    {
+      "name": "Cheshire Cat",
+      "series": "FMAB",
+      "power": 85
+    },
+    {
+      "name": "Dante",
+      "series": "FMAB",
+      "power": 90
+    },
+    {
+      "name": "Darius",
+      "series": "FMAB",
+      "power": 82
+    },
+    {
+      "name": "Edward Elric Alchemist",
+      "series": "FMAB",
+      "power": 90
+    },
+    {
+      "name": "Father Ultimate",
+      "series": "FMAB",
+      "power": 100
+    },
+    {
+      "name": "General Raven",
+      "series": "FMAB",
+      "power": 85
+    },
+    {
+      "name": "Gluttony",
+      "series": "FMAB",
+      "power": 88
+    },
+    {
+      "name": "Greed Ultimate",
+      "series": "FMAB",
+      "power": 92
+    },
+    {
+      "name": "Heinkel",
+      "series": "FMAB",
+      "power": 80
+    },
+    {
+      "name": "Hohenheim Philosopher",
+      "series": "FMAB",
+      "power": 98
+    },
+    {
+      "name": "Issac",
+      "series": "FMAB",
+      "power": 84
+    },
+    {
+      "name": "Izumi Curtis",
+      "series": "FMAB",
+      "power": 86
+    },
+    {
+      "name": "Kimblee Alchemist",
+      "series": "FMAB",
+      "power": 88
+    },
+    {
+      "name": "Kimbly",
+      "series": "FMAB",
+      "power": 87
+    },
+    {
+      "name": "Ling Yao Chimera",
+      "series": "FMAB",
+      "power": 90
+    },
+    {
+      "name": "Lust",
+      "series": "FMAB",
+      "power": 91
+    },
+    {
+      "name": "Major Armstrong Strongarm",
+      "series": "FMAB",
+      "power": 88
+    },
+    {
+      "name": "Olivier Armstrong General",
+      "series": "FMAB",
+      "power": 89
+    },
+    {
+      "name": "Pride Homunculus",
+      "series": "FMAB",
+      "power": 96
+    },
+    {
+      "name": "Riza Hawkeye Sniper",
+      "series": "FMAB",
+      "power": 82
+    },
+    {
+      "name": "Roy Mustang Flame",
+      "series": "FMAB",
+      "power": 94
+    },
+    {
+      "name": "Scar Alchemy",
+      "series": "FMAB",
+      "power": 91
+    },
+    {
+      "name": "Shou Tucker",
+      "series": "FMAB",
+      "power": 50
+    },
+    {
+      "name": "Solf Kimblee",
+      "series": "FMAB",
+      "power": 89
+    },
+    {
+      "name": "Trisha",
+      "series": "FMAB",
+      "power": 75
+    },
+    {
+      "name": "Winry Rockbell",
+      "series": "FMAB",
+      "power": 40
+    },
+    {
+      "name": "Acnologia Dragon King",
+      "series": "Fairy Tail",
+      "power": 100
+    },
+    {
+      "name": "Erza Scarlet Nakagami",
+      "series": "Fairy Tail",
+      "power": 97
+    },
+    {
+      "name": "Fairy Heart",
+      "series": "Fairy Tail",
+      "power": 100
+    },
+    {
+      "name": "Flare Corona",
+      "series": "Fairy Tail",
+      "power": 84
+    },
+    {
+      "name": "Gajeel Redfox Iron Dragon",
+      "series": "Fairy Tail",
+      "power": 92
+    },
+    {
+      "name": "Gildarts Clive Dimensional",
+      "series": "Fairy Tail",
+      "power": 97
+    },
+    {
+      "name": "Grandeeny",
+      "series": "Fairy Tail",
+      "power": 96
+    },
+    {
+      "name": "Gray Fullbuster Demon",
+      "series": "Fairy Tail",
+      "power": 94
+    },
+    {
+      "name": "Hibiki Lates",
+      "series": "Fairy Tail",
+      "power": 85
+    },
+    {
+      "name": "Igneel",
+      "series": "Fairy Tail",
+      "power": 98
+    },
+    {
+      "name": "Jellal Fernandes Reborn",
+      "series": "Fairy Tail",
+      "power": 94
+    },
+    {
+      "name": "Jenny Realight",
+      "series": "Fairy Tail",
+      "power": 82
+    },
+    {
+      "name": "Kagura Mikazuchi",
+      "series": "Fairy Tail",
+      "power": 89
+    },
+    {
+      "name": "Laxus Dreyar God Slayer",
+      "series": "Fairy Tail",
+      "power": 96
+    },
+    {
+      "name": "Lucy Heartfilia Celestial",
+      "series": "Fairy Tail",
+      "power": 90
+    },
+    {
+      "name": "Lyon Vastia",
+      "series": "Fairy Tail",
+      "power": 92
+    },
+    {
+      "name": "Mavis Vermillion",
+      "series": "Fairy Tail",
+      "power": 95
+    },
+    {
+      "name": "Meredy",
+      "series": "Fairy Tail",
+      "power": 80
+    },
+    {
+      "name": "Metalicana",
+      "series": "Fairy Tail",
+      "power": 97
+    },
+    {
+      "name": "Milliana",
+      "series": "Fairy Tail",
+      "power": 82
+    },
+    {
+      "name": "Minerva Orland",
+      "series": "Fairy Tail",
+      "power": 90
+    },
+    {
+      "name": "Mirajane Strauss Satan",
+      "series": "Fairy Tail",
+      "power": 93
+    },
+    {
+      "name": "Natsu Dragneel E.N.D",
+      "series": "Fairy Tail",
+      "power": 99
+    },
+    {
+      "name": "Orga Nanagear",
+      "series": "Fairy Tail",
+      "power": 88
+    },
+    {
+      "name": "Rogue Cheney Shadow Dragon",
+      "series": "Fairy Tail",
+      "power": 93
+    },
+    {
+      "name": "Rufus Lore",
+      "series": "Fairy Tail",
+      "power": 90
+    },
+    {
+      "name": "Sherria",
+      "series": "Fairy Tail",
+      "power": 85
+    },
+    {
+      "name": "Simon",
+      "series": "Fairy Tail",
+      "power": 75
+    },
+    {
+      "name": "Skiadrum",
+      "series": "Fairy Tail",
+      "power": 94
+    },
+    {
+      "name": "Sting Eucliffe White Dragon",
+      "series": "Fairy Tail",
+      "power": 92
+    },
+    {
+      "name": "Ultear Milkovich",
+      "series": "Fairy Tail",
+      "power": 88
+    },
+    {
+      "name": "Weisslogia",
+      "series": "Fairy Tail",
+      "power": 95
+    },
+    {
+      "name": "Wendy Marvell Dragon God",
+      "series": "Fairy Tail",
+      "power": 91
+    },
+    {
+      "name": "Yukino Agria",
+      "series": "Fairy Tail",
+      "power": 87
+    },
+    {
+      "name": "Zeref Dragneel Immortal",
+      "series": "Fairy Tail",
+      "power": 99
+    },
+    {
+      "name": "Abuto",
+      "series": "Gintama",
+      "power": 88
+    },
+    {
+      "name": "Banzai",
+      "series": "Gintama",
+      "power": 80
+    },
+    {
+      "name": "Bilikin",
+      "series": "Gintama",
+      "power": 72
+    },
+    {
+      "name": "Biscoe Alford",
+      "series": "Gintama",
+      "power": 76
+    },
+    {
+      "name": "Elizabeth Toy",
+      "series": "Gintama",
+      "power": 75
+    },
+    {
+      "name": "Gintoki's landlady",
+      "series": "Gintama",
+      "power": 50
+    },
+    {
+      "name": "Hashida",
+      "series": "Gintama",
+      "power": 70
+    },
+    {
+      "name": "Hijikata Toshiro Demon",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Imanotsurugi",
+      "series": "Gintama",
+      "power": 78
+    },
+    {
+      "name": "Jiraia",
+      "series": "Gintama",
+      "power": 84
+    },
+    {
+      "name": "Jirocho Doromizu",
+      "series": "Gintama",
+      "power": 91
+    },
+    {
+      "name": "Kagerou Shinobi",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Kagura Demon Blood",
+      "series": "Gintama",
+      "power": 88
+    },
+    {
+      "name": "Kamui Full Power",
+      "series": "Gintama",
+      "power": 94
+    },
+    {
+      "name": "Katsura Kotarou",
+      "series": "Gintama",
+      "power": 87
+    },
+    {
+      "name": "Kondo Isao Gorilla",
+      "series": "Gintama",
+      "power": 80
+    },
+    {
+      "name": "Mito Elf",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Mutsu",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Oboro Ninja",
+      "series": "Gintama",
+      "power": 90
+    },
+    {
+      "name": "Okita Sougo True Form",
+      "series": "Gintama",
+      "power": 90
+    },
+    {
+      "name": "Pirako",
+      "series": "Gintama",
+      "power": 75
+    },
+    {
+      "name": "Sadaharu Dog",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Sakamoto Tatsuma",
+      "series": "Gintama",
+      "power": 88
+    },
+    {
+      "name": "Sakata Gintoki Final",
+      "series": "Gintama",
+      "power": 92
+    },
+    {
+      "name": "Sarutobi Ayame",
+      "series": "Gintama",
+      "power": 78
+    },
+    {
+      "name": "Shimura Otae",
+      "series": "Gintama",
+      "power": 72
+    },
+    {
+      "name": "Shinpachi Shimura",
+      "series": "Gintama",
+      "power": 60
+    },
+    {
+      "name": "Sougo Okita",
+      "series": "Gintama",
+      "power": 88
+    },
+    {
+      "name": "Takasugi Shinsuke Final",
+      "series": "Gintama",
+      "power": 93
+    },
+    {
+      "name": "Takechi Henpeita",
+      "series": "Gintama",
+      "power": 86
+    },
+    {
+      "name": "Tatsugoro Kintoki",
+      "series": "Gintama",
+      "power": 85
+    },
+    {
+      "name": "Tetsuko Bar Owner",
+      "series": "Gintama",
+      "power": 80
+    },
+    {
+      "name": "Tokugawa Shigeshige",
+      "series": "Gintama",
+      "power": 15
+    },
+    {
+      "name": "Tsukuyo",
+      "series": "Gintama",
+      "power": 82
+    },
+    {
+      "name": "Umibouzu Alien",
+      "series": "Gintama",
+      "power": 97
+    },
+    {
+      "name": "Utsuro Ancient",
+      "series": "Gintama",
+      "power": 98
+    },
+    {
+      "name": "Yagyu Kyubei",
+      "series": "Gintama",
+      "power": 82
+    },
+    {
+      "name": "Zenzou Hattori",
+      "series": "Gintama",
+      "power": 84
+    },
+    {
+      "name": "Anti-Spiral Ultimate",
+      "series": "Gurren Lagann",
+      "power": 100
+    },
+    {
+      "name": "Genome Beast",
+      "series": "Gurren Lagann",
+      "power": 89
+    },
+    {
+      "name": "Kamina Spiral",
+      "series": "Gurren Lagann",
+      "power": 92
+    },
+    {
+      "name": "Lord Genome King",
+      "series": "Gurren Lagann",
+      "power": 98
+    },
+    {
+      "name": "Nia Princess",
+      "series": "Gurren Lagann",
+      "power": 94
+    },
+    {
+      "name": "Simon Spiral King",
+      "series": "Gurren Lagann",
+      "power": 99
+    },
+    {
+      "name": "Thymilph Leader",
+      "series": "Gurren Lagann",
+      "power": 90
+    },
+    {
+      "name": "Viral Combat",
+      "series": "Gurren Lagann",
+      "power": 91
+    },
+    {
+      "name": "Yoko Littner Final",
+      "series": "Gurren Lagann",
+      "power": 88
+    },
+    {
+      "name": "Alexander Anderson",
+      "series": "Hellsing",
+      "power": 92
+    },
+    {
+      "name": "Alucard Final Form",
+      "series": "Hellsing",
+      "power": 100
+    },
+    {
+      "name": "Anderson Alexander Berserker",
+      "series": "Hellsing",
+      "power": 96
+    },
+    {
+      "name": "Enrico Marini",
+      "series": "Hellsing",
+      "power": 82
+    },
+    {
+      "name": "Incognito Ultimate",
+      "series": "Hellsing",
+      "power": 93
+    },
+    {
+      "name": "Pip Bernadotte Mercenary",
+      "series": "Hellsing",
+      "power": 85
+    },
+    {
+      "name": "Rip Van Winkle",
+      "series": "Hellsing",
+      "power": 88
+    },
+    {
+      "name": "Scar Face Assassin Vampire",
+      "series": "Hellsing",
+      "power": 90
+    },
+    {
+      "name": "Seras Victoria Ultimate",
+      "series": "Hellsing",
+      "power": 95
+    },
+    {
+      "name": "The Major Ultimate",
+      "series": "Hellsing",
+      "power": 98
+    },
+    {
+      "name": "Valentine Brothers",
+      "series": "Hellsing",
+      "power": 91
+    },
+    {
+      "name": "Alluka Zoldyck",
+      "series": "HxH",
+      "power": 95
+    },
+    {
+      "name": "Biscuit Krueger Trainer",
+      "series": "HxH",
+      "power": 91
+    },
+    {
+      "name": "Bodoro Troupe",
+      "series": "HxH",
+      "power": 86
+    },
+    {
+      "name": "Canary",
+      "series": "HxH",
+      "power": 70
+    },
+    {
+      "name": "Chimera Ant King",
+      "series": "HxH",
+      "power": 100
+    },
+    {
+      "name": "Chrollo Lucilfer God",
+      "series": "HxH",
+      "power": 97
+    },
+    {
+      "name": "Feitan Master",
+      "series": "HxH",
+      "power": 92
+    },
+    {
+      "name": "Franklin Troupe",
+      "series": "HxH",
+      "power": 91
+    },
+    {
+      "name": "Ging Freecss Hunter",
+      "series": "HxH",
+      "power": 97
+    },
+    {
+      "name": "Hisoka Morow True Form",
+      "series": "HxH",
+      "power": 96
+    },
+    {
+      "name": "Illumi Zoldyck Master",
+      "series": "HxH",
+      "power": 95
+    },
+    {
+      "name": "Isaac Netero",
+      "series": "HxH",
+      "power": 97
+    },
+    {
+      "name": "Kite Chimera",
+      "series": "HxH",
+      "power": 91
+    },
+    {
+      "name": "Knuckle Bine",
+      "series": "HxH",
+      "power": 87
+    },
+    {
+      "name": "Kurapika Chain Ultimate",
+      "series": "HxH",
+      "power": 96
+    },
+    {
+      "name": "Leorio Paradinight",
+      "series": "HxH",
+      "power": 80
+    },
+    {
+      "name": "Machi Troupe",
+      "series": "HxH",
+      "power": 88
+    },
+    {
+      "name": "Menthuthuyoupi Guard",
+      "series": "HxH",
+      "power": 94
+    },
+    {
+      "name": "Meruem Royal Ant",
+      "series": "HxH",
+      "power": 100
+    },
+    {
+      "name": "Morel Mackernasey",
+      "series": "HxH",
+      "power": 91
+    },
+    {
+      "name": "Neferpitou Guardian",
+      "series": "HxH",
+      "power": 96
+    },
+    {
+      "name": "Neon Nostrade",
+      "series": "HxH",
+      "power": 50
+    },
+    {
+      "name": "Netero 100 Type Prayer",
+      "series": "HxH",
+      "power": 100
+    },
+    {
+      "name": "Nobunaga Hazama",
+      "series": "HxH",
+      "power": 89
+    },
+    {
+      "name": "Palm Siberia",
+      "series": "HxH",
+      "power": 80
+    },
+    {
+      "name": "Phinks Magcub",
+      "series": "HxH",
+      "power": 87
+    },
+    {
+      "name": "Pouf",
+      "series": "HxH",
+      "power": 92
+    },
+    {
+      "name": "Shaiapouf Royal Guard",
+      "series": "HxH",
+      "power": 95
+    },
+    {
+      "name": "Shalnark Troupe",
+      "series": "HxH",
+      "power": 90
+    },
+    {
+      "name": "Shoot McMahon",
+      "series": "HxH",
+      "power": 85
+    },
+    {
+      "name": "Silva Zoldyck Head",
+      "series": "HxH",
+      "power": 95
+    },
+    {
+      "name": "Zeno Zoldyck Elder",
+      "series": "HxH",
+      "power": 96
+    },
+    {
+      "name": "Aoi Todo",
+      "series": "JJK",
+      "power": 90
+    },
+    {
+      "name": "Choso Blood",
+      "series": "JJK",
+      "power": 90
+    },
+    {
+      "name": "Gojo Satoru Infinity",
+      "series": "JJK",
+      "power": 100
+    },
+    {
+      "name": "Hakari Winged King",
+      "series": "JJK",
+      "power": 94
+    },
+    {
+      "name": "Hanami Vegetation",
+      "series": "JJK",
+      "power": 91
+    },
+    {
+      "name": "Jogo Inferno",
+      "series": "JJK",
+      "power": 93
+    },
+    {
+      "name": "Junpei",
+      "series": "JJK",
+      "power": 40
+    },
+    {
+      "name": "Kanade Takada",
+      "series": "JJK",
+      "power": 75
+    },
+    {
+      "name": "Kashimo Lightning",
+      "series": "JJK",
+      "power": 95
+    },
+    {
+      "name": "Kenjaku Reincarnation",
+      "series": "JJK",
+      "power": 97
+    },
+    {
+      "name": "Kento Nanami Salaryman",
+      "series": "JJK",
+      "power": 90
+    },
+    {
+      "name": "Kiara Hanami",
+      "series": "JJK",
+      "power": 88
+    },
+    {
+      "name": "Mahito Transfiguration",
+      "series": "JJK",
+      "power": 92
+    },
+    {
+      "name": "Maki Zenin No Cursed Energy",
+      "series": "JJK",
+      "power": 94
+    },
+    {
+      "name": "Megumi Fushiguro True Form",
+      "series": "JJK",
+      "power": 94
+    },
+    {
+      "name": "Nobara Kugisaki",
+      "series": "JJK",
+      "power": 85
+    },
+    {
+      "name": "Panda",
+      "series": "JJK",
+      "power": 84
+    },
+    {
+      "name": "Ryomen Sukuna True Power",
+      "series": "JJK",
+      "power": 100
+    },
+    {
+      "name": "Shoko Ieiri",
+      "series": "JJK",
+      "power": 60
+    },
+    {
+      "name": "Suguru Geto Cursed Spirit",
+      "series": "JJK",
+      "power": 96
+    },
+    {
+      "name": "Todo Aoi Combat",
+      "series": "JJK",
+      "power": 91
+    },
+    {
+      "name": "Toge Inumaki",
+      "series": "JJK",
+      "power": 82
+    },
+    {
+      "name": "Toji Fushiguro Sorcerer Killer",
+      "series": "JJK",
+      "power": 95
+    },
+    {
+      "name": "Uraume",
+      "series": "JJK",
+      "power": 89
+    },
+    {
+      "name": "Yuji Itadori Final",
+      "series": "JJK",
+      "power": 92
+    },
+    {
+      "name": "Yuta Okkotsu Cursed Form",
+      "series": "JJK",
+      "power": 98
+    },
+    {
+      "name": "Bruno Bucciarati Sticky Fingers",
+      "series": "Jojo",
+      "power": 91
+    },
+    {
+      "name": "Diavolo Requiem",
+      "series": "Jojo",
+      "power": 99
+    },
+    {
+      "name": "Dio Brando Ultimate",
+      "series": "Jojo",
+      "power": 99
+    },
+    {
+      "name": "Giorno Giovanna",
+      "series": "Jojo",
+      "power": 100
+    },
+    {
+      "name": "Johnny Joestar Tusk",
+      "series": "Jojo",
+      "power": 95
+    },
+    {
+      "name": "Jolyne Cujoh Stone Free",
+      "series": "Jojo",
+      "power": 91
+    },
+    {
+      "name": "Joseph Joestar Hermit Purple",
+      "series": "Jojo",
+      "power": 91
+    },
+    {
+      "name": "Josuke Higashikata Part 8 Soft Wet",
+      "series": "Jojo",
+      "power": 94
+    },
+    {
+      "name": "Jotaro Kujo Star Platinum Over Heaven",
+      "series": "Jojo",
+      "power": 100
+    },
+    {
+      "name": "Kakyoin Emerald Splash",
+      "series": "Jojo",
+      "power": 87
+    },
+    {
+      "name": "Kira Yoshikage Killer Queen",
+      "series": "Jojo",
+      "power": 93
+    },
+    {
+      "name": "Koichi Hirose Reverb",
+      "series": "Jojo",
+      "power": 92
+    },
+    {
+      "name": "Okuyasu Nijimura Hand",
+      "series": "Jojo",
+      "power": 90
+    },
+    {
+      "name": "Poco",
+      "series": "Jojo",
+      "power": 10
+    },
+    {
+      "name": "Polnareff Silver Chariot",
+      "series": "Jojo",
+      "power": 88
+    },
+    {
+      "name": "Pucci Heaven Ascension",
+      "series": "Jojo",
+      "power": 100
+    },
+    {
+      "name": "Rohan Kishibe Heaven's Door",
+      "series": "Jojo",
+      "power": 91
+    },
+    {
+      "name": "Tonpetty",
+      "series": "Jojo",
+      "power": 75
+    },
+    {
+      "name": "Will A. Zeppeli",
+      "series": "Jojo",
+      "power": 80
+    },
+    {
+      "name": "All For One Ultimate",
+      "series": "MHA",
+      "power": 99
+    },
+    {
+      "name": "Bakugo King Explosion",
+      "series": "MHA",
+      "power": 96
+    },
+    {
+      "name": "Best Jeanist Fiber",
+      "series": "MHA",
+      "power": 91
+    },
+    {
+      "name": "Cementoss Cement",
+      "series": "MHA",
+      "power": 86
+    },
+    {
+      "name": "Dabi Cremation",
+      "series": "MHA",
+      "power": 93
+    },
+    {
+      "name": "Deku All For One",
+      "series": "MHA",
+      "power": 99
+    },
+    {
+      "name": "Ectoplasm Clone",
+      "series": "MHA",
+      "power": 85
+    },
+    {
+      "name": "Endeavor Hell Flame",
+      "series": "MHA",
+      "power": 96
+    },
+    {
+      "name": "Eraserhead Erase",
+      "series": "MHA",
+      "power": 90
+    },
+    {
+      "name": "Gran Torino Aged",
+      "series": "MHA",
+      "power": 93
+    },
+    {
+      "name": "Hawks Feather Coat",
+      "series": "MHA",
+      "power": 93
+    },
+    {
+      "name": "Midnight Somnambulist",
+      "series": "MHA",
+      "power": 87
+    },
+    {
+      "name": "Midoriya's mother",
+      "series": "MHA",
+      "power": 20
+    },
+    {
+      "name": "Mirko Rabbit",
+      "series": "MHA",
+      "power": 92
+    },
+    {
+      "name": "Nezu Principal",
+      "series": "MHA",
+      "power": 85
+    },
+    {
+      "name": "Overhaul Disaster",
+      "series": "MHA",
+      "power": 94
+    },
+    {
+      "name": "Present Mic Voice",
+      "series": "MHA",
+      "power": 88
+    },
+    {
+      "name": "Recovery Girl",
+      "series": "MHA",
+      "power": 50
+    },
+    {
+      "name": "Shigaraki Decay Final",
+      "series": "MHA",
+      "power": 99
+    },
+    {
+      "name": "Shota Aizawa True Form",
+      "series": "MHA",
+      "power": 92
+    },
+    {
+      "name": "Spinner Gecko",
+      "series": "MHA",
+      "power": 83
+    },
+    {
+      "name": "Stain Hero Killer",
+      "series": "MHA",
+      "power": 89
+    },
+    {
+      "name": "Thirteen Warp",
+      "series": "MHA",
+      "power": 83
+    },
+    {
+      "name": "Todoroki Ice Fire",
+      "series": "MHA",
+      "power": 95
+    },
+    {
+      "name": "Toga Twice",
+      "series": "MHA",
+      "power": 88
+    },
+    {
+      "name": "Twice Clone",
+      "series": "MHA",
+      "power": 91
+    },
+    {
+      "name": "Claw Boss",
+      "series": "Mob Psycho 100",
+      "power": 90
+    },
+    {
+      "name": "Dimple Spirit",
+      "series": "Mob Psycho 100",
+      "power": 85
+    },
+    {
+      "name": "Kin Psychic Child",
+      "series": "Mob Psycho 100",
+      "power": 62
+    },
+    {
+      "name": "Mob Psycho 100 Full Power",
+      "series": "Mob Psycho 100",
+      "power": 100
+    },
+    {
+      "name": "Nendo Body",
+      "series": "Mob Psycho 100",
+      "power": 58
+    },
+    {
+      "name": "Onigawara Muscle",
+      "series": "Mob Psycho 100",
+      "power": 60
+    },
+    {
+      "name": "Rigan Psychic",
+      "series": "Mob Psycho 100",
+      "power": 87
+    },
+    {
+      "name": "Serizawa Katsuya Psychic",
+      "series": "Mob Psycho 100",
+      "power": 92
+    },
+    {
+      "name": "Teru Hanazawa Psychic Ultimate",
+      "series": "Mob Psycho 100",
+      "power": 96
+    },
+    {
+      "name": "Aisha Greyrat",
+      "series": "Mushoku Tensei",
+      "power": 85
+    },
+    {
+      "name": "Arifureta Demon King",
+      "series": "Mushoku Tensei",
+      "power": 95
+    },
+    {
+      "name": "Dragon God",
+      "series": "Mushoku Tensei",
+      "power": 100
+    },
+    {
+      "name": "Eris Greyrat Divine",
+      "series": "Mushoku Tensei",
+      "power": 95
+    },
+    {
+      "name": "Ghislaine Sword Master",
+      "series": "Mushoku Tensei",
+      "power": 92
+    },
+    {
+      "name": "Hitogami God",
+      "series": "Mushoku Tensei",
+      "power": 99
+    },
+    {
+      "name": "Kishirika Demon",
+      "series": "Mushoku Tensei",
+      "power": 96
+    },
+    {
+      "name": "Lilia Fairy",
+      "series": "Mushoku Tensei",
+      "power": 89
+    },
+    {
+      "name": "Nanahoshi Zultania",
+      "series": "Mushoku Tensei",
+      "power": 87
+    },
+    {
+      "name": "Orsted",
+      "series": "Mushoku Tensei",
+      "power": 100
+    },
+    {
+      "name": "Paul Greyrat Swordsman",
+      "series": "Mushoku Tensei",
+      "power": 88
+    },
+    {
+      "name": "Pax Demon Sword",
+      "series": "Mushoku Tensei",
+      "power": 88
+    },
+    {
+      "name": "Perugius Donovohan",
+      "series": "Mushoku Tensei",
+      "power": 94
+    },
+    {
+      "name": "Roxy Migurdia Wizard",
+      "series": "Mushoku Tensei",
+      "power": 91
+    },
+    {
+      "name": "Rudeus Greyrat God Level",
+      "series": "Mushoku Tensei",
+      "power": 97
+    },
+    {
+      "name": "Ruijerd Demon",
+      "series": "Mushoku Tensei",
+      "power": 94
+    },
+    {
+      "name": "Suiren Half Elf",
+      "series": "Mushoku Tensei",
+      "power": 91
+    },
+    {
+      "name": "Sylphiette Wind Spirit",
+      "series": "Mushoku Tensei",
+      "power": 88
+    },
+    {
+      "name": "Zenith Greyrat Magic",
+      "series": "Mushoku Tensei",
+      "power": 75
+    },
+    {
+      "name": "Boruto Uzumaki Karma",
+      "series": "Naruto",
+      "power": 88
+    },
+    {
+      "name": "Choza Akimichi",
+      "series": "Naruto",
+      "power": 83
+    },
+    {
+      "name": "Deidara Art",
+      "series": "Naruto",
+      "power": 90
+    },
+    {
+      "name": "Ebisu",
+      "series": "Naruto",
+      "power": 65
+    },
+    {
+      "name": "Gaara Sand Master",
+      "series": "Naruto",
+      "power": 93
+    },
+    {
+      "name": "Hashirama Senju Wood God",
+      "series": "Naruto",
+      "power": 98
+    },
+    {
+      "name": "Hinata Hyuga Divine",
+      "series": "Naruto",
+      "power": 82
+    },
+    {
+      "name": "Hiruzen Sarutobi Professor",
+      "series": "Naruto",
+      "power": 92
+    },
+    {
+      "name": "Hisashi Hyuga",
+      "series": "Naruto",
+      "power": 88
+    },
+    {
+      "name": "Inoichi Yamanaka",
+      "series": "Naruto",
+      "power": 82
+    },
+    {
+      "name": "Itachi Uchiha Perfect",
+      "series": "Naruto",
+      "power": 96
+    },
+    {
+      "name": "Jiraiya Sage",
+      "series": "Naruto",
+      "power": 93
+    },
+    {
+      "name": "Kagami Uchiha",
+      "series": "Naruto",
+      "power": 88
+    },
+    {
+      "name": "Kaguya Otsutsuki Goddess",
+      "series": "Naruto",
+      "power": 100
+    },
+    {
+      "name": "Kakashi Hatake Perfect Sharingan",
+      "series": "Naruto",
+      "power": 95
+    },
+    {
+      "name": "Kakuzu Bounty Hunter",
+      "series": "Naruto",
+      "power": 90
+    },
+    {
+      "name": "Kankuro",
+      "series": "Naruto",
+      "power": 81
+    },
+    {
+      "name": "Kawaki Karma",
+      "series": "Naruto",
+      "power": 89
+    },
+    {
+      "name": "Killer Bee Eight Tails",
+      "series": "Naruto",
+      "power": 94
+    },
+    {
+      "name": "Kisame Killer Whale",
+      "series": "Naruto",
+      "power": 92
+    },
+    {
+      "name": "Konan Paper Angel",
+      "series": "Naruto",
+      "power": 90
+    },
+    {
+      "name": "Madara Uchiha Limbo",
+      "series": "Naruto",
+      "power": 99
+    },
+    {
+      "name": "Might Guy Eight Gates",
+      "series": "Naruto",
+      "power": 97
+    },
+    {
+      "name": "Minato Namikaze Yellow Flash",
+      "series": "Naruto",
+      "power": 96
+    },
+    {
+      "name": "Mitsuki",
+      "series": "Naruto",
+      "power": 85
+    },
+    {
+      "name": "Momoshiki Otsutsuki",
+      "series": "Naruto",
+      "power": 98
+    },
+    {
+      "name": "Naruto Uzumaki Baryon Mode",
+      "series": "Naruto",
+      "power": 100
+    },
+    {
+      "name": "Neji Hyuga Rotation",
+      "series": "Naruto",
+      "power": 85
+    },
+    {
+      "name": "Obito Uchiha Masked",
+      "series": "Naruto",
+      "power": 97
+    },
+    {
+      "name": "Orochimaru Immortal",
+      "series": "Naruto",
+      "power": 94
+    },
+    {
+      "name": "Pain God",
+      "series": "Naruto",
+      "power": 95
+    },
+    {
+      "name": "Rasa",
+      "series": "Naruto",
+      "power": 85
+    },
+    {
+      "name": "Rock Lee Eight Gates",
+      "series": "Naruto",
+      "power": 94
+    },
+    {
+      "name": "Sakura Haruno War",
+      "series": "Naruto",
+      "power": 90
+    },
+    {
+      "name": "Saonji",
+      "series": "Naruto",
+      "power": 85
+    },
+    {
+      "name": "Sarada Uchiha",
+      "series": "Naruto",
+      "power": 83
+    },
+    {
+      "name": "Sasori Puppet Master",
+      "series": "Naruto",
+      "power": 91
+    },
+    {
+      "name": "Sasuke Uchiha Rinnegan",
+      "series": "Naruto",
+      "power": 99
+    },
+    {
+      "name": "Shikaku Nara",
+      "series": "Naruto",
+      "power": 84
+    },
+    {
+      "name": "Shikamaru Nara Shadow Master",
+      "series": "Naruto",
+      "power": 85
+    },
+    {
+      "name": "Shino Aburame",
+      "series": "Naruto",
+      "power": 82
+    },
+    {
+      "name": "Suna Yagura",
+      "series": "Naruto",
+      "power": 89
+    },
+    {
+      "name": "Temari",
+      "series": "Naruto",
+      "power": 83
+    },
+    {
+      "name": "Tobirama Senju Water Master",
+      "series": "Naruto",
+      "power": 96
+    },
+    {
+      "name": "Tsunade Healing",
+      "series": "Naruto",
+      "power": 92
+    },
+    {
+      "name": "Atomic Samurai Blade",
+      "series": "OPM",
+      "power": 94
+    },
+    {
+      "name": "Bang Martial Master",
+      "series": "OPM",
+      "power": 96
+    },
+    {
+      "name": "Blast Hero",
+      "series": "OPM",
+      "power": 100
+    },
+    {
+      "name": "Boros Overlord",
+      "series": "OPM",
+      "power": 98
+    },
+    {
+      "name": "Crablante Crab",
+      "series": "OPM",
+      "power": 30
+    },
+    {
+      "name": "Deep Sea King",
+      "series": "OPM",
+      "power": 78
+    },
+    {
+      "name": "Fubuki Psychic",
+      "series": "OPM",
+      "power": 85
+    },
+    {
+      "name": "Garou Monster",
+      "series": "OPM",
+      "power": 100
+    },
+    {
+      "name": "Geno",
+      "series": "OPM",
+      "power": 92
+    },
+    {
+      "name": "Genos Cyborg",
+      "series": "OPM",
+      "power": 93
+    },
+    {
+      "name": "King",
+      "series": "OPM",
+      "power": 100
+    },
+    {
+      "name": "Licenseless Rider Bike",
+      "series": "OPM",
+      "power": 65
+    },
+    {
+      "name": "Metal Bat Bat",
+      "series": "OPM",
+      "power": 91
+    },
+    {
+      "name": "Mosquito Girl Mosquito",
+      "series": "OPM",
+      "power": 75
+    },
+    {
+      "name": "Mumen Rider Justice",
+      "series": "OPM",
+      "power": 15
+    },
+    {
+      "name": "Puri Puri Prisoner",
+      "series": "OPM",
+      "power": 88
+    },
+    {
+      "name": "Saitama",
+      "series": "OPM",
+      "power": 100
+    },
+    {
+      "name": "Speed-o'-Sound Sonic Ninja",
+      "series": "OPM",
+      "power": 90
+    },
+    {
+      "name": "Superalloy Darkshine Muscle",
+      "series": "OPM",
+      "power": 95
+    },
+    {
+      "name": "Tanktop Master Tank",
+      "series": "OPM",
+      "power": 88
+    },
+    {
+      "name": "Tatsumaki Tornado",
+      "series": "OPM",
+      "power": 99
+    },
+    {
+      "name": "Vaccine Man Virus",
+      "series": "OPM",
+      "power": 72
+    },
+    {
+      "name": "Watchdog Man Dog",
+      "series": "OPM",
+      "power": 93
+    },
+    {
+      "name": "Ace Fire Fist",
+      "series": "One Piece",
+      "power": 93
+    },
+    {
+      "name": "Akainu Magma Admiral",
+      "series": "One Piece",
+      "power": 98
+    },
+    {
+      "name": "Aokiji Ice Admiral",
+      "series": "One Piece",
+      "power": 97
+    },
+    {
+      "name": "Big Mom Yonko",
+      "series": "One Piece",
+      "power": 98
+    },
+    {
+      "name": "Blackbeard Dark Power",
+      "series": "One Piece",
+      "power": 97
+    },
+    {
+      "name": "Boa Hancock",
+      "series": "One Piece",
+      "power": 91
+    },
+    {
+      "name": "Bon Clay",
+      "series": "One Piece",
+      "power": 82
+    },
+    {
+      "name": "Brook Soul King",
+      "series": "One Piece",
+      "power": 87
+    },
+    {
+      "name": "Chopper Human Form",
+      "series": "One Piece",
+      "power": 85
+    },
+    {
+      "name": "Crocodile Sand Controller",
+      "series": "One Piece",
+      "power": 91
+    },
+    {
+      "name": "Diamante",
+      "series": "One Piece",
+      "power": 88
+    },
+    {
+      "name": "Doflamingo String Master",
+      "series": "One Piece",
+      "power": 94
+    },
+    {
+      "name": "Enel Thunder God",
+      "series": "One Piece",
+      "power": 91
+    },
+    {
+      "name": "Franky Cyborg",
+      "series": "One Piece",
+      "power": 90
+    },
+    {
+      "name": "Fujitora Gravity Admiral",
+      "series": "One Piece",
+      "power": 96
+    },
+    {
+      "name": "Garp Hero",
+      "series": "One Piece",
+      "power": 98
+    },
+    {
+      "name": "Gol D. Roger",
+      "series": "One Piece",
+      "power": 100
+    },
+    {
+      "name": "Hancock Sisters",
+      "series": "One Piece",
+      "power": 85
+    },
+    {
+      "name": "Jinbe Fishman",
+      "series": "One Piece",
+      "power": 92
+    },
+    {
+      "name": "Kaido Beast King",
+      "series": "One Piece",
+      "power": 99
+    },
+    {
+      "name": "Katakuri Future Sight",
+      "series": "One Piece",
+      "power": 95
+    },
+    {
+      "name": "Kid",
+      "series": "One Piece",
+      "power": 92
+    },
+    {
+      "name": "King Dragon Flame",
+      "series": "One Piece",
+      "power": 94
+    },
+    {
+      "name": "Kizaru Light Admiral",
+      "series": "One Piece",
+      "power": 97
+    },
+    {
+      "name": "Law Surgeon Of Death",
+      "series": "One Piece",
+      "power": 94
+    },
+    {
+      "name": "Lucci Leopard",
+      "series": "One Piece",
+      "power": 92
+    },
+    {
+      "name": "Luffy Gear Fifth",
+      "series": "One Piece",
+      "power": 100
+    },
+    {
+      "name": "Marco Phoenix",
+      "series": "One Piece",
+      "power": 95
+    },
+    {
+      "name": "Mihawk Strongest Swordsman",
+      "series": "One Piece",
+      "power": 98
+    },
+    {
+      "name": "Moria",
+      "series": "One Piece",
+      "power": 88
+    },
+    {
+      "name": "Nami Weather Master",
+      "series": "One Piece",
+      "power": 80
+    },
+    {
+      "name": "Pica",
+      "series": "One Piece",
+      "power": 90
+    },
+    {
+      "name": "Queen Virus",
+      "series": "One Piece",
+      "power": 92
+    },
+    {
+      "name": "Rayleigh Dark King",
+      "series": "One Piece",
+      "power": 98
+    },
+    {
+      "name": "Rob Lucci",
+      "series": "One Piece",
+      "power": 91
+    },
+    {
+      "name": "Robin Ancient Weapon",
+      "series": "One Piece",
+      "power": 88
+    },
+    {
+      "name": "Sabo Revolutionary",
+      "series": "One Piece",
+      "power": 94
+    },
+    {
+      "name": "Sanji Hybrid",
+      "series": "One Piece",
+      "power": 95
+    },
+    {
+      "name": "Sengoku Fleet Admiral",
+      "series": "One Piece",
+      "power": 97
+    },
+    {
+      "name": "Shanks Red Hair",
+      "series": "One Piece",
+      "power": 100
+    },
+    {
+      "name": "Sogeking",
+      "series": "One Piece",
+      "power": 75
+    },
+    {
+      "name": "Trebol",
+      "series": "One Piece",
+      "power": 87
+    },
+    {
+      "name": "Usopp Marksman",
+      "series": "One Piece",
+      "power": 75
+    },
+    {
+      "name": "Vergo",
+      "series": "One Piece",
+      "power": 90
+    },
+    {
+      "name": "Whitebeard Tremor Fruit",
+      "series": "One Piece",
+      "power": 99
+    },
+    {
+      "name": "Wiper",
+      "series": "One Piece",
+      "power": 80
+    },
+    {
+      "name": "Yamato Beast Form",
+      "series": "One Piece",
+      "power": 95
+    },
+    {
+      "name": "Zoro King Of Hell",
+      "series": "One Piece",
+      "power": 96
+    },
+    {
+      "name": "Ainz Ooal Gown Ultimate",
+      "series": "Overlord",
+      "power": 99
+    },
+    {
+      "name": "Albedo Alter",
+      "series": "Overlord",
+      "power": 96
+    },
+    {
+      "name": "Aura Bella Fiora Beast",
+      "series": "Overlord",
+      "power": 93
+    },
+    {
+      "name": "Climb Warrior",
+      "series": "Overlord",
+      "power": 45
+    },
+    {
+      "name": "Cocytus Insect",
+      "series": "Overlord",
+      "power": 94
+    },
+    {
+      "name": "Demiurge Deceiver",
+      "series": "Overlord",
+      "power": 95
+    },
+    {
+      "name": "Elders Undead",
+      "series": "Overlord",
+      "power": 88
+    },
+    {
+      "name": "Entoma Vasilissa Zeta",
+      "series": "Overlord",
+      "power": 88
+    },
+    {
+      "name": "Evil Eye Magic",
+      "series": "Overlord",
+      "power": 85
+    },
+    {
+      "name": "Gazef Stronoff Warrior Captain",
+      "series": "Overlord",
+      "power": 80
+    },
+    {
+      "name": "Khajiit Vampire",
+      "series": "Overlord",
+      "power": 90
+    },
+    {
+      "name": "Lakyus Alvein Dale",
+      "series": "Overlord",
+      "power": 82
+    },
+    {
+      "name": "Lupusregina Beta",
+      "series": "Overlord",
+      "power": 89
+    },
+    {
+      "name": "Mare Bello Fiore Shadow",
+      "series": "Overlord",
+      "power": 93
+    },
+    {
+      "name": "Narberal Gamma Doll",
+      "series": "Overlord",
+      "power": 91
+    },
+    {
+      "name": "Nazarick Guardians",
+      "series": "Overlord",
+      "power": 90
+    },
+    {
+      "name": "Peroronchino",
+      "series": "Overlord",
+      "power": 100
+    },
+    {
+      "name": "Renner Thorne Elite",
+      "series": "Overlord",
+      "power": 50
+    },
+    {
+      "name": "Sebas Tian Sword",
+      "series": "Overlord",
+      "power": 95
+    },
+    {
+      "name": "Shalltear Bride",
+      "series": "Overlord",
+      "power": 96
+    },
+    {
+      "name": "Solution Epsilon Slime",
+      "series": "Overlord",
+      "power": 92
+    },
+    {
+      "name": "Sorcerer King",
+      "series": "Overlord",
+      "power": 95
+    },
+    {
+      "name": "Tabula Smaragdina",
+      "series": "Overlord",
+      "power": 100
+    },
+    {
+      "name": "Touch Me First Master",
+      "series": "Overlord",
+      "power": 100
+    },
+    {
+      "name": "Yuri Alpha",
+      "series": "Overlord",
+      "power": 90
+    },
+    {
+      "name": "Arkem Knight",
+      "series": "Re:Zero",
+      "power": 80
+    },
+    {
+      "name": "Beatrice Maid",
+      "series": "Re:Zero",
+      "power": 88
+    },
+    {
+      "name": "Camilla Witch",
+      "series": "Re:Zero",
+      "power": 91
+    },
+    {
+      "name": "Daphne Witch",
+      "series": "Re:Zero",
+      "power": 89
+    },
+    {
+      "name": "Echidna Witch",
+      "series": "Re:Zero",
+      "power": 97
+    },
+    {
+      "name": "Emilia Silver Hair",
+      "series": "Re:Zero",
+      "power": 90
+    },
+    {
+      "name": "Felt Street Girl",
+      "series": "Re:Zero",
+      "power": 65
+    },
+    {
+      "name": "Ferris Argyle Healer",
+      "series": "Re:Zero",
+      "power": 85
+    },
+    {
+      "name": "Julius Juukulius Sword Master",
+      "series": "Re:Zero",
+      "power": 91
+    },
+    {
+      "name": "Priscilla Dragon Knight",
+      "series": "Re:Zero",
+      "power": 94
+    },
+    {
+      "name": "Puck",
+      "series": "Re:Zero",
+      "power": 95
+    },
+    {
+      "name": "Reinhard van Astrea",
+      "series": "Re:Zero",
+      "power": 100
+    },
+    {
+      "name": "Rem Demon Maid",
+      "series": "Re:Zero",
+      "power": 88
+    },
+    {
+      "name": "Roswaal L. Mathers Mage",
+      "series": "Re:Zero",
+      "power": 93
+    },
+    {
+      "name": "Satella",
+      "series": "Re:Zero",
+      "power": 100
+    },
+    {
+      "name": "Sekhmet Witch",
+      "series": "Re:Zero",
+      "power": 93
+    },
+    {
+      "name": "Subaru Natsuki Return",
+      "series": "Re:Zero",
+      "power": 60
+    },
+    {
+      "name": "Basil Timoteo",
+      "series": "Reborn",
+      "power": 85
+    },
+    {
+      "name": "Belphegor Prince",
+      "series": "Reborn",
+      "power": 89
+    },
+    {
+      "name": "Byakuran White Spell",
+      "series": "Reborn",
+      "power": 97
+    },
+    {
+      "name": "Chrome Dokuro Illusionist",
+      "series": "Reborn",
+      "power": 86
+    },
+    {
+      "name": "Colonello Mercenary",
+      "series": "Reborn",
+      "power": 91
+    },
+    {
+      "name": "Daemon Spade Ninth",
+      "series": "Reborn",
+      "power": 93
+    },
+    {
+      "name": "Dino Sheep",
+      "series": "Reborn",
+      "power": 90
+    },
+    {
+      "name": "Fon Master",
+      "series": "Reborn",
+      "power": 91
+    },
+    {
+      "name": "Fran Poison",
+      "series": "Reborn",
+      "power": 84
+    },
+    {
+      "name": "Giotto Vongola First",
+      "series": "Reborn",
+      "power": 98
+    },
+    {
+      "name": "Glo Xinia",
+      "series": "Reborn",
+      "power": 85
+    },
+    {
+      "name": "Gokudera Hayato Bomber",
+      "series": "Reborn",
+      "power": 90
+    },
+    {
+      "name": "Hibari Kyoya Cloud",
+      "series": "Reborn",
+      "power": 94
+    },
+    {
+      "name": "I-Pin",
+      "series": "Reborn",
+      "power": 87
+    },
+    {
+      "name": "Iemitsu Sawada",
+      "series": "Reborn",
+      "power": 88
+    },
+    {
+      "name": "Iris",
+      "series": "Reborn",
+      "power": 92
+    },
+    {
+      "name": "Lal Mirch Arcobaleno",
+      "series": "Reborn",
+      "power": 87
+    },
+    {
+      "name": "Lambo Lightning",
+      "series": "Reborn",
+      "power": 75
+    },
+    {
+      "name": "Leviathan Assassin",
+      "series": "Reborn",
+      "power": 87
+    },
+    {
+      "name": "Mitsuro Suzuki",
+      "series": "Reborn",
+      "power": 82
+    },
+    {
+      "name": "Mitsuro's father",
+      "series": "Reborn",
+      "power": 78
+    },
+    {
+      "name": "Mukuro Rokudo Six Paths",
+      "series": "Reborn",
+      "power": 94
+    },
+    {
+      "name": "Nana Sawada Mother",
+      "series": "Reborn",
+      "power": 10
+    },
+    {
+      "name": "Nosaru",
+      "series": "Reborn",
+      "power": 76
+    },
+    {
+      "name": "Reborn Arcobaleno",
+      "series": "Reborn",
+      "power": 93
+    },
+    {
+      "name": "Ryohei Sasagawa Boxer",
+      "series": "Reborn",
+      "power": 88
+    },
+    {
+      "name": "Shamal",
+      "series": "Reborn",
+      "power": 88
+    },
+    {
+      "name": "Skull",
+      "series": "Reborn",
+      "power": 75
+    },
+    {
+      "name": "Squalo Superbi Shark",
+      "series": "Reborn",
+      "power": 91
+    },
+    {
+      "name": "Superbi Squalo",
+      "series": "Reborn",
+      "power": 89
+    },
+    {
+      "name": "Tazaru",
+      "series": "Reborn",
+      "power": 76
+    },
+    {
+      "name": "Tazaru's clone",
+      "series": "Reborn",
+      "power": 74
+    },
+    {
+      "name": "Tsuna's friends",
+      "series": "Reborn",
+      "power": 65
+    },
+    {
+      "name": "Tsunayoshi Sawada Mafia Boss",
+      "series": "Reborn",
+      "power": 96
+    },
+    {
+      "name": "Vino",
+      "series": "Reborn",
+      "power": 86
+    },
+    {
+      "name": "Xanxus Varia Leader",
+      "series": "Reborn",
+      "power": 95
+    },
+    {
+      "name": "Yamamoto Takeshi Baseball",
+      "series": "Reborn",
+      "power": 90
+    },
+    {
+      "name": "Yuni",
+      "series": "Reborn",
+      "power": 96
+    },
+    {
+      "name": "Administrator Almighty",
+      "series": "SAO",
+      "power": 99
+    },
+    {
+      "name": "Agil Gun",
+      "series": "SAO",
+      "power": 85
+    },
+    {
+      "name": "Agile Lewin",
+      "series": "SAO",
+      "power": 85
+    },
+    {
+      "name": "Asuna Flash",
+      "series": "SAO",
+      "power": 91
+    },
+    {
+      "name": "Bercouli Emperor",
+      "series": "SAO",
+      "power": 96
+    },
+    {
+      "name": "Eugene",
+      "series": "SAO",
+      "power": 84
+    },
+    {
+      "name": "Heathcliff Kayaba",
+      "series": "SAO",
+      "power": 94
+    },
+    {
+      "name": "Kirito Dual Wield",
+      "series": "SAO",
+      "power": 95
+    },
+    {
+      "name": "Liz Healer",
+      "series": "SAO",
+      "power": 82
+    },
+    {
+      "name": "Quinella Cardinal",
+      "series": "SAO",
+      "power": 98
+    },
+    {
+      "name": "Silica Tamer",
+      "series": "SAO",
+      "power": 80
+    },
+    {
+      "name": "Sinon Sniper",
+      "series": "SAO",
+      "power": 87
+    },
+    {
+      "name": "Sugou Nobuyuki",
+      "series": "SAO",
+      "power": 55
+    },
+    {
+      "name": "Yui AI",
+      "series": "SAO",
+      "power": 95
+    },
+    {
+      "name": "Archangel Michael",
+      "series": "SDS",
+      "power": 98
+    },
+    {
+      "name": "Arthur Pendragon King",
+      "series": "SDS",
+      "power": 97
+    },
+    {
+      "name": "Ban Immortality",
+      "series": "SDS",
+      "power": 95
+    },
+    {
+      "name": "Diane Serpent",
+      "series": "SDS",
+      "power": 91
+    },
+    {
+      "name": "Elizabeth Liones",
+      "series": "SDS",
+      "power": 70
+    },
+    {
+      "name": "Escanor Sunshine",
+      "series": "SDS",
+      "power": 99
+    },
+    {
+      "name": "Estarossa Love",
+      "series": "SDS",
+      "power": 95
+    },
+    {
+      "name": "Gowther Doll",
+      "series": "SDS",
+      "power": 93
+    },
+    {
+      "name": "Hawk Pig",
+      "series": "SDS",
+      "power": 65
+    },
+    {
+      "name": "Hendrickson Holy Knight",
+      "series": "SDS",
+      "power": 91
+    },
+    {
+      "name": "Jericho Holy Knight",
+      "series": "SDS",
+      "power": 86
+    },
+    {
+      "name": "King Fairy King",
+      "series": "SDS",
+      "power": 94
+    },
+    {
+      "name": "Mael Warrior",
+      "series": "SDS",
+      "power": 97
+    },
+    {
+      "name": "Meliodas Dragon Sin",
+      "series": "SDS",
+      "power": 99
+    },
+    {
+      "name": "Merlin Boar Sin",
+      "series": "SDS",
+      "power": 96
+    },
+    {
+      "name": "Veronica Liones Princess",
+      "series": "SDS",
+      "power": 70
+    },
+    {
+      "name": "Zeldris Dark",
+      "series": "SDS",
+      "power": 97
+    },
+    {
+      "name": "Filo Bird",
+      "series": "Shield Hero",
+      "power": 89
+    },
+    {
+      "name": "Glass Sword Master",
+      "series": "Shield Hero",
+      "power": 90
+    },
+    {
+      "name": "L'Arc Hero King",
+      "series": "Shield Hero",
+      "power": 91
+    },
+    {
+      "name": "Malty Betrayer",
+      "series": "Shield Hero",
+      "power": 68
+    },
+    {
+      "name": "Melromarc Queen",
+      "series": "Shield Hero",
+      "power": 82
+    },
+    {
+      "name": "Melty Princess",
+      "series": "Shield Hero",
+      "power": 75
+    },
+    {
+      "name": "Motoyasu Spear Hero",
+      "series": "Shield Hero",
+      "power": 80
+    },
+    {
+      "name": "Myne",
+      "series": "Shield Hero",
+      "power": 50
+    },
+    {
+      "name": "Naofumi Iwatani Final",
+      "series": "Shield Hero",
+      "power": 94
+    },
+    {
+      "name": "Raphtalia Demi-Human",
+      "series": "Shield Hero",
+      "power": 88
+    },
+    {
+      "name": "Ren Sword Hero",
+      "series": "Shield Hero",
+      "power": 80
+    },
+    {
+      "name": "Tangu Adventurer",
+      "series": "Shield Hero",
+      "power": 70
+    },
+    {
+      "name": "Wyndia Elf",
+      "series": "Shield Hero",
+      "power": 72
+    },
+    {
+      "name": "Albis",
+      "series": "Slime",
+      "power": 78
+    },
+    {
+      "name": "Benimaru Storm",
+      "series": "Slime",
+      "power": 94
+    },
+    {
+      "name": "Ciel AI",
+      "series": "Slime",
+      "power": 98
+    },
+    {
+      "name": "Diablo Demon",
+      "series": "Slime",
+      "power": 97
+    },
+    {
+      "name": "Frey Elf",
+      "series": "Slime",
+      "power": 88
+    },
+    {
+      "name": "Geld",
+      "series": "Slime",
+      "power": 72
+    },
+    {
+      "name": "Gelem Demon",
+      "series": "Slime",
+      "power": 82
+    },
+    {
+      "name": "Gellen",
+      "series": "Slime",
+      "power": 80
+    },
+    {
+      "name": "Gobta Goblin",
+      "series": "Slime",
+      "power": 75
+    },
+    {
+      "name": "Guy Crimson Demon Lord",
+      "series": "Slime",
+      "power": 99
+    },
+    {
+      "name": "Lamias",
+      "series": "Slime",
+      "power": 87
+    },
+    {
+      "name": "Milim Nava Demon Lord",
+      "series": "Slime",
+      "power": 100
+    },
+    {
+      "name": "Mononobe no Futo",
+      "series": "Slime",
+      "power": 85
+    },
+    {
+      "name": "Ramiris Fairy Lord",
+      "series": "Slime",
+      "power": 95
+    },
+    {
+      "name": "Rimuru Tempest Ultimate",
+      "series": "Slime",
+      "power": 100
+    },
+    {
+      "name": "Shion Oni",
+      "series": "Slime",
+      "power": 92
+    },
+    {
+      "name": "Veldanava",
+      "series": "Slime",
+      "power": 100
+    },
+    {
+      "name": "Veldora Dragon",
+      "series": "Slime",
+      "power": 98
+    },
+    {
+      "name": "Anya Forger Telepath",
+      "series": "Spy x Family",
+      "power": 85
+    },
+    {
+      "name": "Becky Blackbell Friend",
+      "series": "Spy x Family",
+      "power": 60
+    },
+    {
+      "name": "Bond Dog",
+      "series": "Spy x Family",
+      "power": 78
+    },
+    {
+      "name": "Damazo",
+      "series": "Spy x Family",
+      "power": 80
+    },
+    {
+      "name": "Damian Desmond Noble",
+      "series": "Spy x Family",
+      "power": 75
+    },
+    {
+      "name": "Demetrius Prince",
+      "series": "Spy x Family",
+      "power": 87
+    },
+    {
+      "name": "Fiona Frost Agent",
+      "series": "Spy x Family",
+      "power": 89
+    },
+    {
+      "name": "Handler Manager",
+      "series": "Spy x Family",
+      "power": 80
+    },
+    {
+      "name": "Keith Keijijo",
+      "series": "Spy x Family",
+      "power": 84
+    },
+    {
+      "name": "Loid Forger Final",
+      "series": "Spy x Family",
+      "power": 96
+    },
+    {
+      "name": "Nightfall Agent",
+      "series": "Spy x Family",
+      "power": 91
+    },
+    {
+      "name": "Yor Forger Ultimate",
+      "series": "Spy x Family",
+      "power": 95
+    },
+    {
+      "name": "Yor's Brother Yuri",
+      "series": "Spy x Family",
+      "power": 88
+    },
+    {
+      "name": "Akira Mado",
+      "series": "Tokyo Ghoul",
+      "power": 80
+    },
+    {
+      "name": "Arima Kishou Investigator",
+      "series": "Tokyo Ghoul",
+      "power": 96
+    },
+    {
+      "name": "Eto Yoshimura One Eye",
+      "series": "Tokyo Ghoul",
+      "power": 94
+    },
+    {
+      "name": "Hairu",
+      "series": "Tokyo Ghoul",
+      "power": 84
+    },
+    {
+      "name": "Hideyoshi",
+      "series": "Tokyo Ghoul",
+      "power": 75
+    },
+    {
+      "name": "Hinami Fueguchi Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 80
+    },
+    {
+      "name": "Irimi Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 77
+    },
+    {
+      "name": "Jason Ghoul Torturer",
+      "series": "Tokyo Ghoul",
+      "power": 85
+    },
+    {
+      "name": "Juuzou Suzuya Investigator",
+      "series": "Tokyo Ghoul",
+      "power": 92
+    },
+    {
+      "name": "Kaneki Ken Final",
+      "series": "Tokyo Ghoul",
+      "power": 98
+    },
+    {
+      "name": "Koma Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 75
+    },
+    {
+      "name": "Misato",
+      "series": "Tokyo Ghoul",
+      "power": 80
+    },
+    {
+      "name": "Nishiki Nishio Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 82
+    },
+    {
+      "name": "Noro Guardian",
+      "series": "Tokyo Ghoul",
+      "power": 86
+    },
+    {
+      "name": "Rize Kamishiro Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 88
+    },
+    {
+      "name": "Seidou Takizawa",
+      "series": "Tokyo Ghoul",
+      "power": 83
+    },
+    {
+      "name": "Tatara Founder",
+      "series": "Tokyo Ghoul",
+      "power": 90
+    },
+    {
+      "name": "Tsukiyama Shuu Gourmet",
+      "series": "Tokyo Ghoul",
+      "power": 91
+    },
+    {
+      "name": "Yoshimura Ghoul",
+      "series": "Tokyo Ghoul",
+      "power": 92
+    },
+    {
+      "name": "Yuzu",
+      "series": "Tokyo Ghoul",
+      "power": 15
+    },
+    {
+      "name": "Askeladd Warrior",
+      "series": "Vinland Saga",
+      "power": 87
+    },
+    {
+      "name": "Bjorn Warrior",
+      "series": "Vinland Saga",
+      "power": 91
+    },
+    {
+      "name": "Canute King",
+      "series": "Vinland Saga",
+      "power": 88
+    },
+    {
+      "name": "Einar Slave",
+      "series": "Vinland Saga",
+      "power": 70
+    },
+    {
+      "name": "Floki Warrior",
+      "series": "Vinland Saga",
+      "power": 83
+    },
+    {
+      "name": "Ivar The Boneless",
+      "series": "Vinland Saga",
+      "power": 80
+    },
+    {
+      "name": "Leif Erikson Explorer",
+      "series": "Vinland Saga",
+      "power": 85
+    },
+    {
+      "name": "Ragnar King",
+      "series": "Vinland Saga",
+      "power": 93
+    },
+    {
+      "name": "Thorfinn Final",
+      "series": "Vinland Saga",
+      "power": 90
+    },
+    {
+      "name": "Thorkell Viking",
+      "series": "Vinland Saga",
+      "power": 91
+    },
+    {
+      "name": "Botan Reaper",
+      "series": "YuYu Hakusho",
+      "power": 80
+    },
+    {
+      "name": "Chu Fighter",
+      "series": "YuYu Hakusho",
+      "power": 90
+    },
+    {
+      "name": "Hiei Ultimate",
+      "series": "YuYu Hakusho",
+      "power": 98
+    },
+    {
+      "name": "Jin Wind Master",
+      "series": "YuYu Hakusho",
+      "power": 94
+    },
+    {
+      "name": "Karasu Gambler",
+      "series": "YuYu Hakusho",
+      "power": 96
+    },
+    {
+      "name": "Keiko Yukimura Human",
+      "series": "YuYu Hakusho",
+      "power": 35
+    },
+    {
+      "name": "Kurama True Form",
+      "series": "YuYu Hakusho",
+      "power": 97
+    },
+    {
+      "name": "Raizen Demon King",
+      "series": "YuYu Hakusho",
+      "power": 99
+    },
+    {
+      "name": "Ren Tao Fighter",
+      "series": "YuYu Hakusho",
+      "power": 91
+    },
+    {
+      "name": "Seiyko Ishijima",
+      "series": "YuYu Hakusho",
+      "power": 55
+    },
+    {
+      "name": "Sensui Dark",
+      "series": "YuYu Hakusho",
+      "power": 98
+    },
+    {
+      "name": "Suzuka Demon",
+      "series": "YuYu Hakusho",
+      "power": 88
+    },
+    {
+      "name": "Toguro 100%",
+      "series": "YuYu Hakusho",
+      "power": 96
+    },
+    {
+      "name": "Yusuke Urameshi Final",
+      "series": "YuYu Hakusho",
+      "power": 97
+    }
+  ]
+}

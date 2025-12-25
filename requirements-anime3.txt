@@ -1,0 +1,13 @@
+# Minimal requirements to run `anime3.py`
+# Primary runtime dependency
+Pyrogram==2.0.100
+
+# Optional but recommended for faster encryption (used by Pyrogram/TG clients)
+TgCrypto==1.2.5
+
+# If you plan to use session storage or other features, these are commonly needed:
+# aiohttp - async HTTP client
+# python-dotenv - for loading credentials from a .env file (optional)
+# (Uncomment/install if you need them)
+# aiohttp>=3.8.0
+# python-dotenv>=1.0.0
