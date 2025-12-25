@@ -18,7 +18,7 @@ BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ" # <--- YOUR TOKEN
 LEADERBOARD_FILE = "leaderboard.json"
 
 # Global dictionary to store game states (replaces context.chat_data)
-GAMES = {} 
+GAMES = {}
 
 # Enable logging
 logging.basicConfig(
@@ -254,16 +254,28 @@ async def simulate_battle(callback_query, game):
     )
     
     await callback_query.message.edit_text(final_text)
+    # cleanup finished game from GAMES dict (support nested chat->game_id)
+    try:
+        chat_id = callback_query.message.chat.id
+        gid = game.get("game_id")
+        if chat_id in GAMES and gid and gid in GAMES[chat_id]:
+            del GAMES[chat_id][gid]
+            if not GAMES[chat_id]:
+                del GAMES[chat_id]
+    except Exception:
+        pass
 
 # --- MENU HELPERS ---
 
-async def show_draw_menu(client, message, game):
+async def show_draw_menu(client, message, game, game_id=None):
     turn_name = game["p1"]["name"] if game["turn"] == game["p1"]["id"] else game["p2"]["name"]
     text = f"🏁 **Drafting Phase**\n\n{get_team_display(game)}\n🎮 **Turn:** {turn_name}"
-    kb = InlineKeyboardMarkup([[InlineKeyboardButton("🎲 Draw Character", callback_data="action_draw")]])
+    gid = game_id or game.get("game_id")
+    cb = f"action_draw_{gid}" if gid else "action_draw"
+    kb = InlineKeyboardMarkup([[InlineKeyboardButton("🎲 Draw Character", callback_data=cb)]])
     await message.edit_text(text, reply_markup=kb)
 
-async def show_assignment_menu(client, message, game, char):
+async def show_assignment_menu(client, message, game, char, game_id=None):
     cp_key = "p1" if game["turn"] == game["p1"]["id"] else "p2"
     team = game[cp_key]["team"]
     skips = game[cp_key]["skips"]
@@ -272,32 +284,40 @@ async def show_assignment_menu(client, message, game, char):
     row = []
     for role in ROLES:
         if role not in team:
-            row.append(InlineKeyboardButton(f"🟢 {role}", callback_data=f"set_{role}"))
+            gid = game_id or game.get("game_id")
+            cb = f"set_{role}_{gid}" if gid else f"set_{role}"
+            row.append(InlineKeyboardButton(f"🟢 {role}", callback_data=cb))
             if len(row) == 2:
                 keyboard.append(row)
                 row = []
     if row: keyboard.append(row)
-    if skips > 0: keyboard.append([InlineKeyboardButton(f"🗑 Skip ({skips})", callback_data="action_skip")])
+    if skips > 0:
+        gid = game_id or game.get("game_id")
+        kb_skip = f"action_skip_{gid}" if gid else "action_skip"
+        keyboard.append([InlineKeyboardButton(f"🗑 Skip ({skips})", callback_data=kb_skip)])
 
     text = f"{get_team_display(game)}\n✨ Pulled: **{char}**\nAssign a position:"
     await message.edit_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
 
-async def finish_game(client, message, game):
+async def finish_game(client, message, game, game_id=None):
     if len(game["p1"]["team"]) != 8 or len(game["p2"]["team"]) != 8:
         return
     
     game["status"] = "finished"
     game["battle_ready"] = {"p1": False, "p2": False}
     
+    gid = game_id or game.get("game_id")
+    cb1 = f"start_rpg_battle_p1_{gid}" if gid else "start_rpg_battle_p1"
+    cb2 = f"start_rpg_battle_p2_{gid}" if gid else "start_rpg_battle_p2"
     keyboard = [
-        [InlineKeyboardButton(f"🔵 {game['p1']['name']} READY", callback_data="start_rpg_battle_p1")],
-        [InlineKeyboardButton(f"🔴 {game['p2']['name']} READY", callback_data="start_rpg_battle_p2")]
+        [InlineKeyboardButton(f"🔵 {game['p1']['name']} READY", callback_data=cb1)],
+        [InlineKeyboardButton(f"🔴 {game['p2']['name']} READY", callback_data=cb2)]
     ]
     
     text = f"🏁 **TEAMS READY!** 🏁\n\n{get_team_display(game)}\n\n⚔️ **BOTH PLAYERS MUST CLICK TO START BATTLE**"
     await message.edit_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
 
-async def show_battle_confirmation(client, message, game):
+async def show_battle_confirmation(client, message, game, game_id=None):
     p1_status = "✅ READY" if game["battle_ready"]["p1"] else "⏳ WAITING"
     p2_status = "✅ READY" if game["battle_ready"]["p2"] else "⏳ WAITING"
     
@@ -314,9 +334,12 @@ async def show_battle_confirmation(client, message, game):
         await simulate_battle(DummyCQ(message), game)
         return
     
+    gid = game_id or game.get("game_id")
+    cb1 = f"start_rpg_battle_p1_{gid}" if gid else "start_rpg_battle_p1"
+    cb2 = f"start_rpg_battle_p2_{gid}" if gid else "start_rpg_battle_p2"
     keyboard = [
-        [InlineKeyboardButton(f"🔵 {game['p1']['name']} {p1_status}", callback_data="start_rpg_battle_p1")],
-        [InlineKeyboardButton(f"🔴 {game['p2']['name']} {p2_status}", callback_data="start_rpg_battle_p2")]
+        [InlineKeyboardButton(f"🔵 {game['p1']['name']} {p1_status}", callback_data=cb1)],
+        [InlineKeyboardButton(f"🔴 {game['p2']['name']} {p2_status}", callback_data=cb2)]
     ]
     
     text = f"🏁 **TEAMS READY!** 🏁\n\n{get_team_display(game)}\n\n⚔️ **P1: {p1_status}** | **P2: {p2_status}**\n\nWaiting for both players to confirm..."
@@ -383,8 +406,15 @@ async def draft_handler(client, message):
 
     chat_id = message.chat.id
 
-    # Store game in global dict
-    GAMES[chat_id] = {
+    # Store game in global dict (support multiple games per chat)
+    if chat_id not in GAMES:
+        GAMES[chat_id] = {}
+
+    # generate short game id
+    game_id = ''.join(random.choice('0123456789abcdef') for _ in range(8))
+
+    GAMES[chat_id][game_id] = {
+        "game_id": game_id,
         "status": "waiting",
         "p1": {"id": challenger.id, "name": challenger.first_name, "team": {}, "skips": 2},
         "p2": {"id": opponent.id, "name": opponent.first_name, "team": {}, "skips": 2},
@@ -395,7 +425,7 @@ async def draft_handler(client, message):
         "battle_ready": {"p1": False, "p2": False}
     }
 
-    keyboard = [[InlineKeyboardButton("✅ Accept Battle", callback_data="accept_battle")]]
+    keyboard = [[InlineKeyboardButton("✅ Accept Battle", callback_data=f"accept_battle_{game_id}")]]
     await message.reply_text(
         f"⚔️ **DRAFT CHALLENGE**\n👤 {challenger.first_name} VS 👤 {opponent.first_name}",
         reply_markup=InlineKeyboardMarkup(keyboard)
@@ -406,13 +436,29 @@ async def callback_handler(client, callback_query):
     chat_id = callback_query.message.chat.id
     user_id = callback_query.from_user.id
     data = callback_query.data
-    
+
+    # callback_data may include a trailing _{game_id} suffix for multi-game support
+    m = re.search(r"_([0-9a-f]{8})$", data)
+    game_id = None
+    if m:
+        game_id = m.group(1)
+        data = data[:m.start()]
+
     if chat_id not in GAMES:
         await callback_query.answer("❌ Game expired.", show_alert=True)
         return
-    
-    game = GAMES[chat_id]
-    
+
+    # get game either by id (multi) or default single-game fallback
+    if game_id:
+        game = GAMES[chat_id].get(game_id)
+    else:
+        games_in_chat = list(GAMES[chat_id].values())
+        game = games_in_chat[0] if len(games_in_chat) == 1 else None
+
+    if not game:
+        await callback_query.answer("❌ Game expired or not found.", show_alert=True)
+        return
+
     # Battle Ready Logic
     if data == "start_rpg_battle_p1":
         if user_id != game["p1"]["id"]:
@@ -422,7 +468,7 @@ async def callback_handler(client, callback_query):
             await callback_query.answer("⏳ Already clicked!", show_alert=True)
             return
         game["battle_ready"]["p1"] = True
-        await show_battle_confirmation(client, callback_query.message, game)
+        await show_battle_confirmation(client, callback_query.message, game, game.get("game_id"))
         return
 
     if data == "start_rpg_battle_p2":
@@ -433,7 +479,7 @@ async def callback_handler(client, callback_query):
             await callback_query.answer("⏳ Already clicked!", show_alert=True)
             return
         game["battle_ready"]["p2"] = True
-        await show_battle_confirmation(client, callback_query.message, game)
+        await show_battle_confirmation(client, callback_query.message, game, game.get("game_id"))
         return
 
     # Accept
@@ -442,7 +488,7 @@ async def callback_handler(client, callback_query):
             await callback_query.answer("❌ Not for you!", show_alert=True)
             return
         game["status"] = "active"
-        await show_draw_menu(client, callback_query.message, game)
+        await show_draw_menu(client, callback_query.message, game, game.get("game_id"))
         return
 
     # Turn Check
@@ -462,7 +508,9 @@ async def callback_handler(client, callback_query):
             return
         drawn = random.choice(pool)
         game["current_draw"] = drawn
-        await show_assignment_menu(client, callback_query.message, game, drawn)
+        gid = game.get("game_id")
+        # include game id in assignment callbacks by wrapping menu builder here
+        await show_assignment_menu(client, callback_query.message, game, drawn, gid)
         return
 
     # Assign Role
@@ -475,11 +523,11 @@ async def callback_handler(client, callback_query):
         game["current_draw"] = None
 
         if len(game["p1"]["team"]) == 8 and len(game["p2"]["team"]) == 8:
-            await finish_game(client, callback_query.message, game)
+            await finish_game(client, callback_query.message, game, game.get("game_id"))
             return
 
         switch_turn(game)
-        await show_draw_menu(client, callback_query.message, game)
+        await show_draw_menu(client, callback_query.message, game, game.get("game_id"))
         return
 
     # Skip
@@ -490,7 +538,7 @@ async def callback_handler(client, callback_query):
             if game["current_draw"]: game["used_chars"].append(game["current_draw"])
             game["current_draw"] = None
             switch_turn(game)
-            await show_draw_menu(client, callback_query.message, game)
+            await show_draw_menu(client, callback_query.message, game, game.get("game_id"))
         else:
             await callback_query.answer("❌ No skips left!", show_alert=True)
 
