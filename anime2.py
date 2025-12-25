@@ -4,7 +4,8 @@ import re
 import json
 import os
 import asyncio
-import uuid
+import threading
+from flask import Flask
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 
@@ -16,8 +17,7 @@ BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ" # <--- YOUR TOKEN
 
 LEADERBOARD_FILE = "leaderboard.json"
 
-# Global dictionary to store game states
-# Structure: {chat_id: {game_id: game_data}}
+# Global dictionary to store game states (replaces context.chat_data)
 GAMES = {} 
 
 # Enable logging
@@ -70,7 +70,6 @@ try:
                 SERIES_DISPLAY[key] = series_name
 except Exception as e:
     logging.error(f"Failed to build series map: {e}")
-
 DEFAULT_POWER = 80
 
 ROLES = [
@@ -258,10 +257,10 @@ async def simulate_battle(callback_query, game):
 
 # --- MENU HELPERS ---
 
-async def show_draw_menu(client, message, game, game_id):
+async def show_draw_menu(client, message, game):
     turn_name = game["p1"]["name"] if game["turn"] == game["p1"]["id"] else game["p2"]["name"]
     text = f"🏁 **Drafting Phase**\n\n{get_team_display(game)}\n🎮 **Turn:** {turn_name}"
-    kb = InlineKeyboardMarkup([[InlineKeyboardButton("🎲 Draw Character", callback_data=f"action_draw_{game_id}")]])
+    kb = InlineKeyboardMarkup([[InlineKeyboardButton("🎲 Draw Character", callback_data="action_draw")]])
     await message.edit_text(text, reply_markup=kb)
 
 async def show_assignment_menu(client, message, game, char):
@@ -356,7 +355,14 @@ async def draft_handler(client, message):
         return
 
     challenger = message.from_user
-    opponent = message.reply_to_message.from_user
+    # reply_to_message.from_user can be None (e.g., replies to channel posts)
+    opponent = None
+    if message.reply_to_message:
+        opponent = message.reply_to_message.from_user
+
+    if opponent is None:
+        await message.reply_text("⚠️ Unable to identify opponent. Reply directly to a user's message (not a channel post).")
+        return
 
     if opponent.is_bot or challenger.id == opponent.id:
         await message.reply_text("⚠️ You can't battle bots or yourself.")
@@ -376,15 +382,9 @@ async def draft_handler(client, message):
         series_filter = key
 
     chat_id = message.chat.id
-    game_id = str(uuid.uuid4())[:8]  # Generate unique game ID
 
-    # Initialize chat games dict if not exists
-    if chat_id not in GAMES:
-        GAMES[chat_id] = {}
-
-    # Store game in global dict with unique ID
-    GAMES[chat_id][game_id] = {
-        "game_id": game_id,
+    # Store game in global dict
+    GAMES[chat_id] = {
         "status": "waiting",
         "p1": {"id": challenger.id, "name": challenger.first_name, "team": {}, "skips": 2},
         "p2": {"id": opponent.id, "name": opponent.first_name, "team": {}, "skips": 2},
@@ -395,9 +395,9 @@ async def draft_handler(client, message):
         "battle_ready": {"p1": False, "p2": False}
     }
 
-    keyboard = [[InlineKeyboardButton("✅ Accept Battle", callback_data=f"accept_battle_{game_id}")]]
+    keyboard = [[InlineKeyboardButton("✅ Accept Battle", callback_data="accept_battle")]]
     await message.reply_text(
-        f"⚔️ **DRAFT CHALLENGE** (ID: {game_id})\n👤 {challenger.first_name} VS 👤 {opponent.first_name}",
+        f"⚔️ **DRAFT CHALLENGE**\n👤 {challenger.first_name} VS 👤 {opponent.first_name}",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
@@ -407,19 +407,11 @@ async def callback_handler(client, callback_query):
     user_id = callback_query.from_user.id
     data = callback_query.data
     
-    # Extract game_id from callback data
-    game_id = None
-    if "_" in data:
-        parts = data.split("_")
-        if len(parts[-1]) <= 8:  # game_id is max 8 chars
-            game_id = parts[-1]
-            data = "_".join(parts[:-1])
-    
-    if chat_id not in GAMES or game_id not in GAMES[chat_id]:
-        await callback_query.answer("❌ Game expired or not found.", show_alert=True)
+    if chat_id not in GAMES:
+        await callback_query.answer("❌ Game expired.", show_alert=True)
         return
     
-    game = GAMES[chat_id][game_id]
+    game = GAMES[chat_id]
     
     # Battle Ready Logic
     if data == "start_rpg_battle_p1":
@@ -484,8 +476,6 @@ async def callback_handler(client, callback_query):
 
         if len(game["p1"]["team"]) == 8 and len(game["p2"]["team"]) == 8:
             await finish_game(client, callback_query.message, game)
-            # Clean up completed game from GAMES dict
-            del GAMES[chat_id][game_id]
             return
 
         switch_turn(game)
@@ -506,4 +496,24 @@ async def callback_handler(client, callback_query):
 
 if __name__ == '__main__':
     logging.info("Bot is starting...")
+    # Start a lightweight keep-alive web server for Render/Heroku-style platforms
+    try:
+        keepalive = Flask("keepalive")
+
+        @keepalive.route("/")
+        def _root():
+            return "OK", 200
+
+        @keepalive.route("/health")
+        def _health():
+            return "healthy", 200
+
+        def _run_server():
+            port = int(os.environ.get("PORT", 5000))
+            keepalive.run(host="0.0.0.0", port=port)
+
+        threading.Thread(target=_run_server, daemon=True).start()
+    except Exception:
+        logging.exception("Failed to start keepalive server")
+
     app.run()
