@@ -2,6 +2,7 @@ Pyrogram==2.0.100
 TgCrypto==1.2.5
 Flask==2.2.5
 gunicorn==20.1.0
+pymongo==4.4.0
 
 # If you plan to use session storage or other features, these are commonly needed:
 # aiohttp - async HTTP client
@@ -9,4 +10,5 @@ gunicorn==20.1.0
 # (Uncomment/install if you need them)
 # aiohttp>=3.8.0
 # python-dotenv>=1.0.0
+
 
