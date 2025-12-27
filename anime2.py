@@ -626,4 +626,3 @@ if __name__ == '__main__':
     except Exception as e:
         logging.critical(f"Bot startup failed: {type(e).__name__}: {e}")
         raise
-
