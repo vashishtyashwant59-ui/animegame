@@ -19,7 +19,7 @@ from pyrogram.enums import ParseMode
 # Get these from https://my.telegram.org/
 API_ID = 25695711  # <--- REPLACE WITH YOUR API ID (Integer)
 API_HASH = "f20065cc26d4a31bf0efc0b44edaffa9" # <--- REPLACE WITH YOUR API HASH (String)
-BOT_TOKEN = "8536034020:AAF9vBEWFpGafMUgKKEfQgptQXL_hCwYbd0" # <--- YOUR TOKEN
+BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ" # <--- YOUR TOKEN
 
 LEADERBOARD_FILE = "leaderboard.json"
 CHATS_FILE = "active_chats.json"
@@ -626,3 +626,4 @@ if __name__ == '__main__':
     except Exception as e:
         logging.critical(f"Bot startup failed: {type(e).__name__}: {e}")
         raise
+
