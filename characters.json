@@ -11807,7 +11807,7 @@
     "name": "Killer Bee Eight Tails",
     "series": "Naruto",
     "stats": {
-      "captain": 95,
+      "captain": 91,
       "vice_captain": 90,
       "tank": 88,
       "healer": 37,
@@ -17317,3 +17317,4 @@
   }
 
 ]
+
