@@ -5268,13 +5268,13 @@
     "name": "Muzan Kibutsuji",
     "series": "Demon Slayer",
     "stats": {
-      "captain": 93,
-      "vice_captain": 88,
+      "captain": 99,
+      "vice_captain": 98,
       "tank": 86,
-      "healer": 36,
+      "healer": 96,
       "assassin": 87,
       "support": 72,
-      "traitor": 64
+      "traitor": 100
     }
   },
   {
@@ -12678,13 +12678,13 @@
     "name": "Sogeking",
     "series": "One Piece",
     "stats": {
-      "captain": 76,
-      "vice_captain": 71,
-      "tank": 70,
-      "healer": 31,
-      "assassin": 70,
-      "support": 58,
-      "traitor": 30
+      "captain": 100,
+      "vice_captain": 100,
+      "tank": 30,
+      "healer": 20,
+      "assassin": 100,
+      "support": 100,
+      "traitor": 50
     }
   },
   {
@@ -17315,4 +17315,5 @@
       "traitor": 34
     }
   }
+
 ]
