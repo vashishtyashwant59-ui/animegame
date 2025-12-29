@@ -387,8 +387,8 @@ async def simulate_battle(callback_query, game):
             c1 = p1["team"].get(r1) if r1 else None
             c2 = p2["team"].get(r2) if r2 else None
             if r1 and r2 and c1 and c2:
-                stat1 = get_stat(c1, r1) + random.randint(0, 7)
-                stat2 = get_stat(c2, r2) + random.randint(0, 7)
+                stat1 = get_stat(c1, r1) 
+                stat2 = get_stat(c2, r2) 
                 if r1 == "Healer" and r2 == "Assassin": stat1 = int(round(stat1 * 2.3))
                 if r1 == "Assassin" and r2 == "Healer": stat2 = int(round(stat2 * 2.3))
                 log += f"{title}:\n"
@@ -626,4 +626,5 @@ if __name__ == '__main__':
     except Exception as e:
         logging.critical(f"Bot startup failed: {type(e).__name__}: {e}")
         raise
+
 
