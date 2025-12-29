@@ -18,7 +18,7 @@ from pyrogram.enums import ParseMode
 # --- CONFIGURATION ---
 API_ID = 25695711  
 API_HASH = "f20065cc26d4a31bf0efc0b44edaffa9" 
-BOT_TOKEN = "8536034020:AAF9vBEWFpGafMUgKKEfQgptQXL_hCwYbd0" 
+BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ" 
 
 # REPLACE WITH YOUR TELEGRAM USER ID FOR BROADCAST COMMAND
 ADMIN_IDS = [123456789, 6265981509] 
@@ -882,4 +882,5 @@ async def callbacks(c, q: CallbackQuery):
 
 if __name__ == "__main__":
     print("Bot Starting...")
+
     app.run()
