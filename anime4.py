@@ -66,8 +66,8 @@ DEFAULT_POWER = 80
 ROLES = ["Captain", "Vice Captain", "Tank", "Healer", "Assassin", "Support 1", "Support 2", "Traitor"]
 
 # Forfeit settings (seconds)
-FORFEIT_TIMEOUT = 1 * 20  # 5 minutes
-FORFEIT_CHECK_INTERVAL = 20  # check every 30s
+FORFEIT_TIMEOUT = 5 * 60  # 5 minutes
+FORFEIT_CHECK_INTERVAL = 30  # check every 30s
 
 # --- INITIALIZATION ---
 def init_mongo():
@@ -936,4 +936,5 @@ if __name__ == "__main__":
         logging.exception("Failed to start Flask web server thread")
 
     app.run()
+
 
