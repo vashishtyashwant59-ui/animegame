@@ -14,11 +14,14 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 from pyrogram.enums import ParseMode
+from flask import Flask, Response
+import urllib.request
+import urllib.error
 
 # --- CONFIGURATION ---
 API_ID = 25695711  
 API_HASH = "f20065cc26d4a31bf0efc0b44edaffa9" 
-BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ" 
+BOT_TOKEN = "8536034020:AAF9vBEWFpGafMUgKKEfQgptQXL_hCwYbd0" 
 
 # REPLACE WITH YOUR TELEGRAM USER ID FOR BROADCAST COMMAND
 ADMIN_IDS = [123456789, 6265981509] 
@@ -86,6 +89,48 @@ def init_mongo():
     except Exception as e:
         USE_MONGO = False
         logging.error(f"❌ MongoDB connection failed: {e}")
+
+# --- SIMPLE WEB / KEEPALIVE (for Render) ---
+# Expose a minimal Flask app as `web_app` so you can run with gunicorn: `gunicorn anime4:web_app`
+PORT = int(os.environ.get("PORT", "8000"))
+KEEPALIVE_URL = os.environ.get("KEEPALIVE_URL", f"http://localhost:{PORT}/")
+KEEPALIVE_INTERVAL = int(os.environ.get("KEEPALIVE_INTERVAL", "600"))
+
+web_app = Flask("anime_keepalive_app")
+
+
+@web_app.route("/")
+def _index():
+    return Response("OK", status=200)
+
+
+@web_app.route("/health")
+def _health():
+    return Response("OK", status=200)
+
+
+def _keepalive_loop():
+    while True:
+        try:
+            try:
+                with urllib.request.urlopen(KEEPALIVE_URL, timeout=10) as resp:
+                    pass
+            except Exception:
+                # keepalive failures are non-fatal; just log at debug level
+                logging.debug(f"Keepalive ping failed to {KEEPALIVE_URL}")
+        except Exception:
+            logging.exception("Unexpected error in keepalive loop")
+        time.sleep(KEEPALIVE_INTERVAL)
+
+
+# Start keepalive thread at import so Render or other hosts that import this module
+# will have the pinger working. It's daemonized so it won't block shutdown.
+try:
+    _ka_thread = threading.Thread(target=_keepalive_loop, daemon=True)
+    _ka_thread.start()
+    logging.info("Keepalive thread started.")
+except Exception:
+    logging.exception("Failed to start keepalive thread")
 
 def load_data():
     global CHAR_STATS, CHAR_IMAGES, ANIME_CHARACTERS, SERIES_MAP, SERIES_DISPLAY
@@ -882,5 +927,12 @@ async def callbacks(c, q: CallbackQuery):
 
 if __name__ == "__main__":
     print("Bot Starting...")
+    # If running directly (not via gunicorn), start the Flask web server in a thread
+    try:
+        web_thread = threading.Thread(target=lambda: web_app.run(host="0.0.0.0", port=PORT), daemon=True)
+        web_thread.start()
+        logging.info(f"Flask web server started on port {PORT}.")
+    except Exception:
+        logging.exception("Failed to start Flask web server thread")
 
     app.run()
