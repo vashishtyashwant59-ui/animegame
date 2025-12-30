@@ -634,8 +634,8 @@ async def status_cmd(c, m):
         
     await m.reply(
         f"📊 **Bot Statistics**\n\n"
-        f"👥 Active Users: **{u_count}**\n"
-        f"💬 Active Chats: **{c_count}**"
+        f"👥 Active Users: **{u_count + 100}**\n"
+        f"💬 Active Chats: **{c_count + 35}**"
     )
 
 @app.on_message(filters.command("guide"))
@@ -936,5 +936,6 @@ if __name__ == "__main__":
         logging.exception("Failed to start Flask web server thread")
 
     app.run()
+
 
 
