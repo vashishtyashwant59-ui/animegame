@@ -573,7 +573,7 @@ async def show_assignment_menu(client, message, game, char, game_id):
     if skips > 0:
         keyboard.append([InlineKeyboardButton(f"🗑 Skip ({skips})", callback_data=f"action_skip_{game_id}")])
 
-    DEFAULT_IMG = null
+    DEFAULT_IMG = "https://files.catbox.moe/wahm05.jpg"
     img_url = CHAR_IMAGES.get(char, DEFAULT_IMG)
     header_link = f'<a href="{img_url}">&#160;</a>'
     
