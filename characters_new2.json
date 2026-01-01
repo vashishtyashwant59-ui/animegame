@@ -12301,12 +12301,12 @@
     "name": "Gol D. Roger",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 99,
+      "vice_captain": 98,
+      "tank": 95,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 100,
+      "support": 80,
       "traitor": 0
     }
   },
@@ -12314,38 +12314,38 @@
     "name": "Whitebeard",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 98,
+      "vice_captain": 95,
+      "tank": 98,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 98,
+      "support": 85,
+      "traitor": 5
     }
   },
   {
     "name": "Shanks Red Hair",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 98,
+      "vice_captain": 97,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 100,
+      "support": 82,
+      "traitor": 10
     }
   },
   {
     "name": "Monkey D. Garp",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 98,
+      "vice_captain": 98,
+      "tank": 96,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 99,
+      "support": 70,
       "traitor": 0
     }
   },
@@ -12353,38 +12353,38 @@
     "name": "Luffy Gear Fifth",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 97,
+      "vice_captain": 95,
+      "tank": 96,
+      "healer": 5,
+      "assassin": 99,
+      "support": 80,
+      "traitor": 1
     }
   },
   {
     "name": "Kaido",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 96,
+      "vice_captain": 90,
+      "tank": 100,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 97,
+      "support": 75,
+      "traitor": 60
     }
   },
   {
     "name": "Imu",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 100,
+      "vice_captain": 100,
+      "tank": 99,
+      "healer": 40,
+      "assassin": 100,
+      "support": 100,
       "traitor": 0
     }
   },
@@ -12392,103 +12392,103 @@
     "name": "Dracule Mihawk",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 93,
+      "vice_captain": 88,
+      "tank": 90,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 100,
+      "support": 60,
+      "traitor": 40
     }
   },
   {
     "name": "Silvers Rayleigh",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 90,
+      "vice_captain": 99,
+      "tank": 92,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 98,
+      "support": 75,
+      "traitor": 5
     }
   },
   {
     "name": "Marshall D. Teach",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 96,
+      "vice_captain": 93,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 95,
+      "support": 70,
+      "traitor": 100
     }
   },
   {
     "name": "Sakazuki (Akainu)",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 96,
+      "vice_captain": 90,
+      "tank": 95,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 98,
+      "support": 65,
+      "traitor": 5
     }
   },
   {
     "name": "Big Mom",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 96,
+      "vice_captain": 85,
+      "tank": 99,
+      "healer": 10,
+      "assassin": 93,
+      "support": 88,
+      "traitor": 50
     }
   },
   {
     "name": "Kuzan (Aokiji)",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 95,
+      "vice_captain": 93,
+      "tank": 93,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 96,
+      "support": 85,
+      "traitor": 85
     }
   },
   {
     "name": "Borsalino (Kizaru)",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 95,
+      "vice_captain": 93,
+      "tank": 90,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 99,
+      "support": 70,
+      "traitor": 20
     }
   },
   {
     "name": "Sengoku",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 98,
+      "vice_captain": 99,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 93,
+      "support": 85,
       "traitor": 0
     }
   },
@@ -12496,25 +12496,25 @@
     "name": "Shiki",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 97,
+      "vice_captain": 96,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 94,
+      "support": 90,
+      "traitor": 40
     }
   },
   {
     "name": "Saint Jaygarcia Saturn",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 96,
+      "vice_captain": 99,
+      "tank": 97,
+      "healer": 40,
+      "assassin": 98,
+      "support": 95,
       "traitor": 0
     }
   },
@@ -12522,12 +12522,12 @@
     "name": "Saint Marcus Mars",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 96,
+      "vice_captain": 98,
+      "tank": 96,
+      "healer": 40,
+      "assassin": 97,
+      "support": 94,
       "traitor": 0
     }
   },
@@ -12535,12 +12535,12 @@
     "name": "Saint Topman Warcury",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 96,
+      "vice_captain": 98,
+      "tank": 98,
+      "healer": 40,
+      "assassin": 96,
+      "support": 93,
       "traitor": 0
     }
   },
@@ -12548,12 +12548,12 @@
     "name": "Saint Ethanbaron V. Nusjuro",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 96,
+      "vice_captain": 98,
+      "tank": 95,
+      "healer": 40,
+      "assassin": 99,
+      "support": 92,
       "traitor": 0
     }
   },
@@ -12561,12 +12561,12 @@
     "name": "Saint Shepherd Ju Peter",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 96,
+      "vice_captain": 98,
+      "tank": 96,
+      "healer": 40,
+      "assassin": 96,
+      "support": 93,
       "traitor": 0
     }
   },
@@ -12574,12 +12574,12 @@
     "name": "Figarland Garling",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 95,
+      "vice_captain": 96,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 98,
+      "support": 80,
       "traitor": 0
     }
   },
@@ -12587,246 +12587,246 @@
     "name": "Issho (Fujitora)",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 95,
+      "vice_captain": 96,
+      "tank": 90,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 93,
+      "support": 92,
+      "traitor": 15
     }
   },
   {
     "name": "Aramaki (Ryokugyu)",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 94,
+      "vice_captain": 96,
+      "tank": 93,
+      "healer": 30,
+      "assassin": 91,
+      "support": 80,
+      "traitor": 10
     }
   },
   {
     "name": "Roronoa Zoro",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 96,
+      "tank": 93,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 97,
+      "support": 60,
+      "traitor": 1
     }
   },
   {
     "name": "Vinsmoke Sanji",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 75,
+      "vice_captain": 95,
+      "tank": 94,
+      "healer": 5,
+      "assassin": 96,
+      "support": 70,
+      "traitor": 1
     }
   },
   {
     "name": "Trafalgar D. Water Law",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 93,
+      "vice_captain": 97,
+      "tank": 85,
+      "healer": 45,
+      "assassin": 94,
+      "support": 100,
+      "traitor": 30
     }
   },
   {
     "name": "Eustass Kid",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 92,
+      "vice_captain": 80,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 93,
+      "support": 70,
+      "traitor": 45
     }
   },
   {
     "name": "Sabo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 93,
+      "vice_captain": 95,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 94,
+      "support": 75,
+      "traitor": 2
     }
   },
   {
     "name": "Yamato",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 88,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 93,
+      "support": 65,
+      "traitor": 10
     }
   },
   {
     "name": "Benn Beckman",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 99,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 95,
+      "support": 80,
+      "traitor": 5
     }
   },
   {
     "name": "Marco the Phoenix",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 88,
+      "vice_captain": 94,
+      "tank": 97,
+      "healer": 45,
+      "assassin": 90,
+      "support": 90,
+      "traitor": 5
     }
   },
   {
     "name": "King",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 93,
+      "tank": 99,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 94,
+      "support": 60,
+      "traitor": 20
     }
   },
   {
     "name": "Charlotte Katakuri",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 82,
+      "vice_captain": 94,
+      "tank": 89,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 95,
+      "support": 70,
+      "traitor": 10
     }
   },
   {
     "name": "Portgas D. Ace",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 93,
+      "vice_captain": 88,
+      "tank": 86,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 89,
+      "support": 65,
+      "traitor": 5
     }
   },
   {
     "name": "Queen",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 70,
+      "vice_captain": 85,
+      "tank": 92,
+      "healer": 15,
+      "assassin": 87,
+      "support": 75,
+      "traitor": 25
     }
   },
   {
     "name": "Jinbe",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 90,
+      "tank": 91,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 87,
+      "support": 70,
+      "traitor": 1
     }
   },
   {
     "name": "Crocodile",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 93,
+      "vice_captain": 90,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 88,
+      "support": 78,
+      "traitor": 80
     }
   },
   {
     "name": "Boa Hancock",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 92,
+      "vice_captain": 86,
+      "tank": 84,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 90,
+      "support": 70,
+      "traitor": 40
     }
   },
   {
     "name": "Donquixote Doflamingo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 92,
+      "vice_captain": 91,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 89,
+      "support": 85,
+      "traitor": 75
     }
   },
   {
     "name": "Bartholomew Kuma",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 50,
+      "vice_captain": 92,
+      "tank": 96,
+      "healer": 10,
+      "assassin": 85,
+      "support": 98,
       "traitor": 0
     }
   },
@@ -12834,155 +12834,155 @@
     "name": "Rob Lucci",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 90,
+      "vice_captain": 88,
+      "tank": 87,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 92,
+      "support": 50,
+      "traitor": 15
     }
   },
   {
     "name": "Shiryu of the Rain",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 90,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 96,
+      "support": 40,
+      "traitor": 95
     }
   },
   {
     "name": "Charlotte Smoothie",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 78,
+      "vice_captain": 87,
+      "tank": 80,
+      "healer": 10,
+      "assassin": 86,
+      "support": 70,
+      "traitor": 10
     }
   },
   {
     "name": "Jozu",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 80,
+      "tank": 99,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 82,
+      "support": 40,
+      "traitor": 10
     }
   },
   {
     "name": "Lucky Roux",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 60,
+      "vice_captain": 88,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 92,
+      "support": 50,
+      "traitor": 5
     }
   },
   {
     "name": "Vista",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 75,
+      "vice_captain": 89,
+      "tank": 82,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 93,
+      "support": 60,
+      "traitor": 5
     }
   },
   {
     "name": "Yasopp",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 60,
+      "vice_captain": 88,
+      "tank": 75,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 98,
+      "support": 70,
+      "traitor": 5
     }
   },
   {
     "name": "Charlotte Cracker",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 85,
+      "tank": 95,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 86,
+      "support": 80,
+      "traitor": 10
     }
   },
   {
     "name": "Jack the Drought",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 65,
+      "vice_captain": 75,
+      "tank": 98,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 84,
+      "support": 40,
+      "traitor": 15
     }
   },
   {
     "name": "Killer",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 78,
+      "vice_captain": 86,
+      "tank": 82,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 91,
+      "support": 50,
+      "traitor": 10
     }
   },
   {
     "name": "Enel",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 88,
+      "vice_captain": 80,
+      "tank": 82,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 87,
+      "support": 75,
+      "traitor": 65
     }
   },
   {
     "name": "Coby",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 80,
+      "vice_captain": 85,
+      "tank": 86,
+      "healer": 5,
+      "assassin": 88,
+      "support": 70,
       "traitor": 0
     }
   },
@@ -12990,12 +12990,12 @@
     "name": "Tsuru",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 85,
+      "vice_captain": 95,
+      "tank": 80,
+      "healer": 10,
+      "assassin": 82,
+      "support": 90,
       "traitor": 0
     }
   },
@@ -13003,298 +13003,298 @@
     "name": "Nico Robin",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 60,
+      "vice_captain": 93,
+      "tank": 78,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 85,
+      "support": 92,
+      "traitor": 2
     }
   },
   {
     "name": "Franky",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 70,
+      "vice_captain": 75,
+      "tank": 90,
+      "healer": 5,
+      "assassin": 83,
+      "support": 70,
+      "traitor": 1
     }
   },
   {
     "name": "Brook",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 65,
+      "vice_captain": 80,
+      "tank": 75,
+      "healer": 5,
+      "assassin": 88,
+      "support": 65,
+      "traitor": 1
     }
   },
   {
     "name": "Tony Tony Chopper",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 50,
+      "vice_captain": 70,
+      "tank": 85,
+      "healer": 44,
+      "assassin": 80,
+      "support": 80,
+      "traitor": 1
     }
   },
   {
     "name": "Nami",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 55,
+      "vice_captain": 88,
+      "tank": 65,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 70,
+      "support": 90,
+      "traitor": 2
     }
   },
   {
     "name": "Usopp",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 50,
+      "vice_captain": 85,
+      "tank": 68,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 75,
+      "support": 94,
+      "traitor": 2
     }
   },
   {
     "name": "X Drake",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 75,
+      "vice_captain": 82,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 86,
+      "support": 60,
+      "traitor": 90
     }
   },
   {
     "name": "Who's-Who",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 78,
+      "vice_captain": 80,
+      "tank": 83,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 87,
+      "support": 40,
+      "traitor": 60
     }
   },
   {
     "name": "Jesus Burgess",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 50,
+      "vice_captain": 70,
+      "tank": 90,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 80,
+      "support": 30,
+      "traitor": 10
     }
   },
   {
     "name": "Sasaki",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 76,
+      "vice_captain": 78,
+      "tank": 91,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 84,
+      "support": 40,
+      "traitor": 20
     }
   },
   {
     "name": "Van Augur",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 50,
+      "vice_captain": 86,
+      "tank": 70,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 97,
+      "support": 75,
+      "traitor": 10
     }
   },
   {
     "name": "Catarina Devon",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 72,
+      "vice_captain": 84,
+      "tank": 80,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 90,
+      "support": 80,
+      "traitor": 15
     }
   },
   {
     "name": "Avalo Pizarro",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 74,
+      "vice_captain": 82,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 85,
+      "support": 50,
+      "traitor": 50
     }
   },
   {
     "name": "Sanjuan Wolf",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 40,
+      "vice_captain": 60,
+      "tank": 97,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 70,
+      "support": 30,
+      "traitor": 30
     }
   },
   {
     "name": "Vasco Shot",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 45,
+      "vice_captain": 75,
+      "tank": 86,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 83,
+      "support": 50,
+      "traitor": 40
     }
   },
   {
     "name": "Bartolomeo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 60,
+      "tank": 100,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 75,
+      "support": 85,
+      "traitor": 5
     }
   },
   {
     "name": "Perospero",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 79,
+      "vice_captain": 83,
+      "tank": 78,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 82,
+      "support": 95,
+      "traitor": 20
     }
   },
   {
     "name": "Ulti",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 65,
+      "vice_captain": 70,
+      "tank": 86,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 85,
+      "support": 30,
+      "traitor": 10
     }
   },
   {
     "name": "Black Maria",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 73,
+      "vice_captain": 78,
+      "tank": 80,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 81,
+      "support": 82,
+      "traitor": 15
     }
   },
   {
     "name": "Page One",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 60,
+      "vice_captain": 65,
+      "tank": 84,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 83,
+      "support": 30,
+      "traitor": 10
     }
   },
   {
     "name": "Sugar",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 10,
+      "vice_captain": 80,
+      "tank": 20,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 20,
+      "support": 100,
+      "traitor": 5
     }
   },
   {
     "name": "Donquixote Rosinante",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 50,
+      "vice_captain": 85,
+      "tank": 60,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 80,
+      "support": 96,
+      "traitor": 100
     }
   },
   {
     "name": "Fisher Tiger",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 94,
+      "vice_captain": 85,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 86,
+      "support": 70,
       "traitor": 0
     }
   },
@@ -13302,38 +13302,38 @@
     "name": "Dory",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 70,
+      "tank": 95,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 85,
+      "support": 60,
+      "traitor": 5
     }
   },
   {
     "name": "Brogy",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 70,
+      "tank": 95,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 85,
+      "support": 60,
+      "traitor": 5
     }
   },
   {
     "name": "Zunesha",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 50,
+      "vice_captain": 50,
+      "tank": 100,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 90,
+      "support": 90,
       "traitor": 0
     }
   },
@@ -13342,11 +13342,11 @@
     "series": "One Piece",
     "stats": {
       "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "vice_captain": 50,
+      "tank": 98,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 92,
+      "support": 50,
       "traitor": 0
     }
   },
@@ -13354,12 +13354,12 @@
     "name": "Joyboy",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 100,
+      "vice_captain": 100,
+      "tank": 98,
+      "healer": 30,
+      "assassin": 100,
+      "support": 95,
       "traitor": 0
     }
   },
@@ -13367,12 +13367,12 @@
     "name": "Nika",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 100,
+      "vice_captain": 100,
+      "tank": 98,
+      "healer": 30,
+      "assassin": 100,
+      "support": 95,
       "traitor": 0
     }
   },
@@ -13380,38 +13380,38 @@
     "name": "Thatch",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 77,
+      "vice_captain": 80,
+      "tank": 78,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 84,
+      "support": 60,
+      "traitor": 5
     }
   },
   {
     "name": "Captain John",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 75,
+      "tank": 80,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 82,
+      "support": 50,
+      "traitor": 90
     }
   },
   {
     "name": "Crocus",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "captain": 60,
+      "vice_captain": 80,
+      "tank": 70,
+      "healer": 45,
+      "assassin": 60,
+      "support": 70,
       "traitor": 0
     }
   },
@@ -13419,64 +13419,64 @@
     "name": "Arlong",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 60,
+      "tank": 78,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 79,
+      "support": 40,
+      "traitor": 70
     }
   },
   {
     "name": "Alvida",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 65,
+      "vice_captain": 50,
+      "tank": 75,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 60,
+      "support": 30,
+      "traitor": 80
     }
   },
   {
     "name": "Sentomaru",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 80,
+      "tank": 92,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 83,
+      "support": 75,
+      "traitor": 10
     }
   },
   {
     "name": "Smoker",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 82,
+      "vice_captain": 84,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 86,
+      "support": 70,
+      "traitor": 5
     }
   },
   {
     "name": "Momonga",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 83,
+      "vice_captain": 86,
+      "tank": 87,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
+      "assassin": 85,
+      "support": 70,
       "traitor": 0
     }
   },
@@ -13484,234 +13484,234 @@
     "name": "Onigumo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 82,
+      "tank": 86,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 87,
+      "support": 65,
+      "traitor": 15
     }
   },
   {
     "name": "Vergo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 75,
+      "vice_captain": 85,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 87,
+      "support": 60,
+      "traitor": 25
     }
   },
   {
     "name": "Pica",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 70,
+      "vice_captain": 75,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 80,
+      "support": 70,
+      "traitor": 20
     }
   },
   {
     "name": "Diamante",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 72,
+      "vice_captain": 78,
+      "tank": 82,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 84,
+      "support": 65,
+      "traitor": 20
     }
   },
   {
     "name": "Trebol",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 68,
+      "vice_captain": 76,
+      "tank": 80,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 79,
+      "support": 80,
+      "traitor": 20
     }
   },
   {
     "name": "Gecko Moria",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 86,
+      "vice_captain": 80,
+      "tank": 85,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 83,
+      "support": 88,
+      "traitor": 60
     }
   },
   {
     "name": "Bon Clay",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 75,
+      "vice_captain": 80,
+      "tank": 76,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 82,
+      "support": 75,
+      "traitor": 2
     }
   },
   {
     "name": "Wiper",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 80,
+      "vice_captain": 75,
+      "tank": 82,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 84,
+      "support": 50,
+      "traitor": 20
     }
   },
   {
     "name": "Scopper Gaban",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 85,
+      "vice_captain": 96,
+      "tank": 90,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 94,
+      "support": 70,
+      "traitor": 5
     }
   },
   {
     "name": "Doc Q & Stronger",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
-      "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "captain": 40,
+      "vice_captain": 70,
+      "tank": 60,
+      "healer": 35,
+      "assassin": 65,
+      "support": 85,
+      "traitor": 10
     }
   },
   {
     "name": "Bepo",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 60,
+      "vice_captain": 70,
+      "tank": 80,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 82,
+      "support": 50,
+      "traitor": 5
     }
   },
   {
     "name": "Sogeking",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
+      "captain": 100,
+      "vice_captain": 100,
       "tank": 0,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 100,
+      "support": 94,
+      "traitor": 2
     }
   },
   {
     "name": "King Harald",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 98,
+      "vice_captain": 85,
+      "tank": 96,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 89,
+      "support": 70,
+      "traitor": 5
     }
   },
   {
     "name": "Prince Loki",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 96,
+      "vice_captain": 82,
+      "tank": 92,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 88,
+      "support": 68,
+      "traitor": 15
     }
   },
   {
     "name": "Saint Figarland Shamrock",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 92,
+      "vice_captain": 94,
+      "tank": 92,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 96,
+      "support": 80,
+      "traitor": 5
     }
   },
   {
     "name": "Gunko",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 90,
+      "vice_captain": 90,
+      "tank": 88,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 93,
+      "support": 85,
+      "traitor": 5
     }
   },
   {
     "name": "Saint Shepherd Sommers",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 90,
+      "vice_captain": 88,
+      "tank": 93,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 90,
+      "support": 75,
+      "traitor": 5
     }
   },
   {
     "name": "Saint Rimoshifu Killingham",
     "series": "One Piece",
     "stats": {
-      "captain": 0,
-      "vice_captain": 0,
-      "tank": 0,
+      "captain": 90,
+      "vice_captain": 88,
+      "tank": 94,
       "healer": 0,
-      "assassin": 0,
-      "support": 0,
-      "traitor": 0
+      "assassin": 92,
+      "support": 75,
+      "traitor": 5
     }
   },
   {
