@@ -5575,7 +5575,7 @@
     "name": "Goku (Ultra Instinct)",
     "series": "Dragon Ball",
     "stats": {
-      "captain": 100,
+      "captain": 99,
       "vice_captain": 98,
       "tank": 98,
       "healer": 10,
@@ -5586,7 +5586,7 @@
     "img": "https://files.catbox.moe/9tye3j.jpg"
   },
   {
-    "name": "Vegeta (Ultra Ego)",
+    "name": "Vegeta",
     "series": "Dragon Ball",
     "stats": {
       "captain": 98,
@@ -5603,7 +5603,7 @@
     "name": "Gogeta Blue",
     "series": "Dragon Ball",
     "stats": {
-      "captain": 99,
+      "captain": 97,
       "vice_captain": 97,
       "tank": 97,
       "healer": 15,
@@ -5751,7 +5751,7 @@
       "support": 94,
       "traitor": 35
     },
-    "img": "https://files.catbox.moe/wtf4x3.jpg"
+    "img": "https://files.catbox.moe/jrd3kr.jpg"
   },
   {
     "name": "Toppo (God of Dest.)",
@@ -10427,7 +10427,7 @@
       "support": 85,
       "traitor": 75
     },
-    "img": "https://files.catbox.moe/llulj0.jpg"
+    "img": "https://files.catbox.moe/ssodwk.jpg"
   },
   {
     "name": "Minsik Choi",
@@ -12639,7 +12639,7 @@
       "support": 93,
       "traitor": 0
     },
-    "img": "https://files.catbox.moe/wvp2ax.jpg"
+    "img": "https://files.catbox.moe/y3mk5r.jpg"
   },
   {
     "name": "Asuma Sarutobi",
@@ -13745,7 +13745,7 @@
       "support": 90,
       "traitor": 2
     },
-    "img": "https://files.catbox.moe/yemxlz.jpg"
+    "img": "https://files.catbox.moe/bpw0m0.jpg"
   },
   {
     "name": "Usopp",
@@ -14571,7 +14571,7 @@
       "support": 90,
       "traitor": 5
     },
-    "img": "https://files.catbox.moe/lxqp19.jpg"
+    "img": "https://files.catbox.moe/ai97gc.jpg"
   },
   {
     "name": "Atomic Samurai",
