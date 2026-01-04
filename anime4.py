@@ -81,7 +81,7 @@ HEALER_BONUS = 2.3
 
 # Forfeit settings (seconds)
 FORFEIT_TIMEOUT = 5 * 60  # 5 minutes
-FORFEIT_CHECK_INTERVAL = 50  # check every 30s
+FORFEIT_CHECK_INTERVAL = 150  # check every 30s
 
 # --- INITIALIZATION ---
 def init_mongo():
