@@ -83,9 +83,9 @@ POKEMON_DATA = {}
 POKEMON_LIST = []
 
 # Default image used when a character has no image
-DEFAULT_CHAR_IMG = "https://files.catbox.moe/wss96e.jpg"
+DEFAULT_CHAR_IMG = "https://files.catbox.moe/wahm05.jpg"
 
-DEFAULT_POWER = 80
+DEFAULT_POWER = 50
 ROLES = ["Captain", "Vice Captain", "Tank", "Healer", "Assassin", "Support 1", "Support 2", "Traitor"]
 
 # Multiplier applied to Healer when facing an Assassin
@@ -1455,6 +1455,275 @@ async def add_char_cmd(c, m):
         
     except Exception as e:
         logging.exception(f"Error in add_char_cmd: {e}")
+        await m.reply(f"❌ Error: {e}")
+
+@app.on_message(filters.command("updateimg") & filters.user(ADMIN_IDS))
+async def updateimg_cmd(c, m):
+    """
+    Admin command to update a character's image URL.
+    Usage:
+    /updateimg "new_url" "character_name" "series_name"
+    """
+    try:
+        # Parse command - expecting quoted arguments
+        text = m.text
+        # Remove the /updateimg command part
+        args_text = text.split(maxsplit=1)[1].strip() if ' ' in text else ""
+        
+        if not args_text:
+            return await m.reply(
+                "❌ Invalid format. Use:\n"
+                '/updateimg "new_url" "character_name" "series_name"'
+            )
+        
+        # Extract quoted arguments
+        import shlex
+        try:
+            parts = shlex.split(args_text)
+            if len(parts) < 3:
+                return await m.reply(
+                    "❌ Invalid format. Use:\n"
+                    '/updateimg "new_url" "character_name" "series_name"'
+                )
+            img_url = parts[0].strip()
+            char_name = parts[1].strip()
+            series_name = parts[2].strip()
+        except ValueError:
+            return await m.reply(
+                "❌ Invalid format. Use:\n"
+                '/updateimg "new_url" "character_name" "series_name"'
+            )
+        
+        if not img_url or not char_name or not series_name:
+            return await m.reply("❌ Image URL, character name, and series name cannot be empty!")
+        
+        # Create unique identifier
+        unique_char_id = f"{char_name} | {series_name}"
+        
+        # Check if character exists
+        if unique_char_id not in CHAR_STATS:
+            return await m.reply(f"❌ Character '{char_name}' from '{series_name}' not found!")
+        
+        # Update in MongoDB if available, otherwise update JSON
+        if USE_MONGO and COL_CHARACTERS is not None:
+            try:
+                result = COL_CHARACTERS.update_one(
+                    {"name": char_name, "series": series_name},
+                    {"$set": {"img": img_url}},
+                    upsert=False
+                )
+                if result.matched_count == 0:
+                    return await m.reply(f"❌ Character not found in database!")
+                logging.info(f"Updated image for '{char_name}' from '{series_name}' in MongoDB.")
+            except Exception as e:
+                logging.error(f"Failed to update character in MongoDB: {e}")
+                return await m.reply(f"❌ Database error: {e}")
+        else:
+            # Fallback: update JSON file
+            try:
+                data = []
+                if os.path.exists(CHARACTERS_FILE):
+                    with open(CHARACTERS_FILE, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                
+                # Find and update character
+                found = False
+                for char in data:
+                    if char.get('name') == char_name and char.get('series') == series_name:
+                        char['img'] = img_url
+                        found = True
+                        break
+                
+                if not found:
+                    return await m.reply(f"❌ Character not found in database!")
+                
+                with open(CHARACTERS_FILE, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                logging.info(f"Updated image for '{char_name}' from '{series_name}' in JSON file.")
+            except Exception as e:
+                logging.error(f"Failed to update character in JSON: {e}")
+                return await m.reply(f"❌ File error: {e}")
+        
+        # Update in-memory data
+        CHAR_IMAGES[unique_char_id] = img_url
+        
+        await m.reply(
+            f"✅ <b>Image Updated!</b>\n\n"
+            f"<b>Character:</b> {html.escape(char_name)}\n"
+            f"<b>Series:</b> {html.escape(series_name)}\n"
+            f"<b>New URL:</b> <code>{html.escape(img_url)}</code>",
+            parse_mode=ParseMode.HTML
+        )
+        
+    except Exception as e:
+        logging.exception(f"Error in updateimg_cmd: {e}")
+        await m.reply(f"❌ Error: {e}")
+
+def save_admin_ids():
+    """Save ADMIN_IDS to a persistent file."""
+    try:
+        with open("admin_ids.json", "w", encoding="utf-8") as f:
+            json.dump(list(ADMIN_IDS), f, indent=2)
+        logging.info(f"Saved {len(ADMIN_IDS)} admin IDs to file.")
+    except Exception as e:
+        logging.error(f"Failed to save admin IDs: {e}")
+
+def load_admin_ids():
+    """Load ADMIN_IDS from persistent file."""
+    global ADMIN_IDS
+    try:
+        if os.path.exists("admin_ids.json"):
+            with open("admin_ids.json", "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                if isinstance(loaded, list):
+                    ADMIN_IDS = loaded
+                    logging.info(f"Loaded {len(ADMIN_IDS)} admin IDs from file.")
+    except Exception as e:
+        logging.error(f"Failed to load admin IDs: {e}")
+
+# Load admin IDs on startup
+load_admin_ids()
+
+@app.on_message(filters.command("add_sudo") & filters.user([6265981509]))
+async def add_sudo_cmd(c, m):
+    """
+    Command to promote a user to admin.
+    Can be used by user 6265981509 only.
+    Usage (reply to a message):
+    /add_sudo
+    
+    Or with username/UID:
+    /add_sudo @username
+    /add_sudo 123456789
+    """
+    try:
+        target_uid = None
+        
+        # Check if replying to a message
+        if m.reply_to_message:
+            target_uid = m.reply_to_message.from_user.id
+        else:
+            # Parse from command arguments
+            parts = m.text.split()
+            if len(parts) < 2:
+                return await m.reply(
+                    "❌ Invalid usage.\n\n"
+                    "<b>Reply to a message:</b>\n/add_sudo\n\n"
+                    "<b>Or provide UID:</b>\n/add_sudo 123456789\n\n"
+                    "<b>Or provide username:</b>\n/add_sudo @username",
+                    parse_mode=ParseMode.HTML
+                )
+            
+            identifier = parts[1]
+            
+            # If it's a username, we'd need to resolve it (simplified for now)
+            if identifier.startswith("@"):
+                # For simplicity, we can't resolve usernames without making API calls
+                return await m.reply("❌ Please reply to the user's message or provide their UID directly.")
+            
+            # Try to parse as UID
+            try:
+                target_uid = int(identifier)
+            except ValueError:
+                return await m.reply("❌ Invalid UID. Please provide a valid numeric UID or reply to a message.")
+        
+        if not target_uid:
+            return await m.reply("❌ Could not determine target user.")
+        
+        # Prevent demoting self
+        if target_uid == m.from_user.id:
+            return await m.reply("❌ You cannot promote yourself (you're already the only promoter).")
+        
+        # Check if already admin
+        if target_uid in ADMIN_IDS:
+            return await m.reply(f"❌ User {target_uid} is already an admin!")
+        
+        # Add to admin list
+        ADMIN_IDS.append(target_uid)
+        save_admin_ids()
+        
+        logging.info(f"User {target_uid} promoted to admin by {m.from_user.id}")
+        
+        await m.reply(
+            f"✅ <b>Admin Promoted!</b>\n\n"
+            f"<b>User ID:</b> <code>{target_uid}</code>\n"
+            f"<b>Total Admins:</b> {len(ADMIN_IDS)}",
+            parse_mode=ParseMode.HTML
+        )
+        
+    except Exception as e:
+        logging.exception(f"Error in add_sudo_cmd: {e}")
+        await m.reply(f"❌ Error: {e}")
+
+@app.on_message(filters.command("remove_sudo") & filters.user([6265981509]))
+async def remove_sudo_cmd(c, m):
+    """
+    Command to demote a user from admin.
+    Can be used by user 6265981509 only.
+    Usage (reply to a message):
+    /remove_sudo
+    
+    Or with username/UID:
+    /remove_sudo @username
+    /remove_sudo 123456789
+    """
+    try:
+        target_uid = None
+        
+        # Check if replying to a message
+        if m.reply_to_message:
+            target_uid = m.reply_to_message.from_user.id
+        else:
+            # Parse from command arguments
+            parts = m.text.split()
+            if len(parts) < 2:
+                return await m.reply(
+                    "❌ Invalid usage.\n\n"
+                    "<b>Reply to a message:</b>\n/remove_sudo\n\n"
+                    "<b>Or provide UID:</b>\n/remove_sudo 123456789\n\n"
+                    "<b>Or provide username:</b>\n/remove_sudo @username",
+                    parse_mode=ParseMode.HTML
+                )
+            
+            identifier = parts[1]
+            
+            # If it's a username, we'd need to resolve it (simplified for now)
+            if identifier.startswith("@"):
+                # For simplicity, we can't resolve usernames without making API calls
+                return await m.reply("❌ Please reply to the user's message or provide their UID directly.")
+            
+            # Try to parse as UID
+            try:
+                target_uid = int(identifier)
+            except ValueError:
+                return await m.reply("❌ Invalid UID. Please provide a valid numeric UID or reply to a message.")
+        
+        if not target_uid:
+            return await m.reply("❌ Could not determine target user.")
+        
+        # Prevent demoting the promoter
+        if target_uid == 6265981509:
+            return await m.reply("❌ Cannot demote the main admin!")
+        
+        # Check if user is actually an admin
+        if target_uid not in ADMIN_IDS:
+            return await m.reply(f"❌ User {target_uid} is not an admin!")
+        
+        # Remove from admin list
+        ADMIN_IDS.remove(target_uid)
+        save_admin_ids()
+        
+        logging.info(f"User {target_uid} demoted from admin by {m.from_user.id}")
+        
+        await m.reply(
+            f"✅ <b>Admin Demoted!</b>\n\n"
+            f"<b>User ID:</b> <code>{target_uid}</code>\n"
+            f"<b>Total Admins:</b> {len(ADMIN_IDS)}",
+            parse_mode=ParseMode.HTML
+        )
+        
+    except Exception as e:
+        logging.exception(f"Error in remove_sudo_cmd: {e}")
         await m.reply(f"❌ Error: {e}")
 
 @app.on_message(filters.command("acast") & filters.user(ADMIN_IDS))
