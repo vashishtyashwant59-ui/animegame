@@ -67,6 +67,9 @@ logging.getLogger().addHandler(file_handler)
 GAMES = {}
 GAMES_LOCK = threading.RLock()
 CALLBACK_SEMAPHORE = asyncio.Semaphore(10)
+GAME_CLEANUP_INTERVAL = 180  # Clean up inactive games every 5 minute
+GAME_INACTIVITY_TIMEOUT = 600  # Remove games with no user interaction for 10 minutes
+FINISHED_GAME_TIMEOUT = 1800  # Remove finished games after 30 minutes
 
 CHAR_STATS = {}
 CHAR_IMAGES = {}
@@ -385,6 +388,63 @@ def forfeit_monitor():
             logging.exception('Forfeit monitor error')
 
 
+def cleanup_old_games():
+    """Cleanup inactive and finished games from memory to prevent memory bloat"""
+    while True:
+        try:
+            time.sleep(GAME_CLEANUP_INTERVAL)
+            now = time.time()
+            removed_count = 0
+            removed_details = {}
+            
+            with GAMES_LOCK:
+                for chat_id, games in list(GAMES.items()):
+                    for gid, game in list(games.items()):
+                        try:
+                            last_activity = game.get('last_activity', 0)
+                            inactivity_duration = (now - last_activity) if last_activity else float('inf')
+                            game_status = game.get('status', 'unknown')
+                            
+                            should_remove = False
+                            reason = ""
+                            
+                            # Remove if game is inactive (no user interaction) for too long
+                            if inactivity_duration > GAME_INACTIVITY_TIMEOUT:
+                                should_remove = True
+                                reason = "inactivity"
+                            # Remove finished games after they've been around for a while
+                            elif game_status == 'finished' and inactivity_duration > FINISHED_GAME_TIMEOUT:
+                                should_remove = True
+                                reason = "finished_timeout"
+                            
+                            if should_remove:
+                                # Cancel any pending async tasks
+                                try:
+                                    task = game.get('timer_task')
+                                    if task and not task.done():
+                                        task.cancel()
+                                except:
+                                    pass
+                                
+                                p1_name = game.get('p1', {}).get('name', 'Unknown')
+                                p2_name = game.get('p2', {}).get('name', 'Unknown')
+                                removed_details[f"{p1_name}_vs_{p2_name}"] = reason
+                                
+                                GAMES[chat_id].pop(gid, None)
+                                removed_count += 1
+                        except Exception:
+                            logging.exception(f'Error cleaning up game {gid}')
+                    
+                    # Remove empty chat entries
+                    if not games:
+                        GAMES.pop(chat_id, None)
+            
+            if removed_count > 0:
+                logging.info(f'Cleaned up {removed_count} inactive/finished games: {removed_details}')
+        except Exception:
+            logging.exception('Game cleanup error')
+
+
 def load_id_set(filename):
     if USE_MONGO:
         col = COL_ACTIVE_CHATS if filename == CHATS_FILE else COL_ACTIVE_USERS
@@ -427,6 +487,14 @@ try:
     t.start()
 except Exception:
     logging.exception('Failed to start forfeit monitor thread')
+
+# Start game cleanup thread
+try:
+    cleanup_t = threading.Thread(target=cleanup_old_games, daemon=True)
+    cleanup_t.start()
+    logging.info("Game cleanup thread started.")
+except Exception:
+    logging.exception('Failed to start game cleanup thread')
 
 # --- RANKING SYSTEM (ELO) ---
 def calculate_elo(rating_a, rating_b, actual_score_a):
@@ -892,7 +960,16 @@ async def simulate_battle(client, message, game):
 
     await ensure_display_message(client, message.chat.id, game, final, preview=False)
     with GAMES_LOCK:
-        GAMES[message.chat.id].pop(game["game_id"], None)
+        try:
+            # Cancel any pending tasks
+            task = game.get('timer_task')
+            if task and not task.done():
+                task.cancel()
+            # Mark as finished instead of removing immediately - cleanup thread will handle it
+            game['status'] = 'finished'
+            game['last_activity'] = time.time()
+        except Exception as e:
+            logging.error(f"Error cleaning up game: {e}")
 
 # --- POKEMON DRAFT HELPER FUNCTIONS ---
 
@@ -1141,8 +1218,16 @@ async def pokemon_simulate_battle(client, message, game):
     final_log = f"{pokemon_get_team_display(game)}\n\n{log}➖➖➖➖➖➖➖➖➖➖\n🔵 <b>Score: {score1}</b> (Rating Change: {delta1:+})\n🔴 <b>Score: {score2}</b> (Rating Change: {delta2:+})\n\n🏆 <b>WINNER: {html.escape(winner_name)}</b>"
     await pokemon_ensure_display_message(client, message.chat.id, game, final_log)
     with GAMES_LOCK:
-        if message.chat.id in GAMES and game["game_id"] in GAMES[message.chat.id]:
-            GAMES[message.chat.id].pop(game["game_id"])
+        try:
+            # Cancel any pending tasks
+            task = game.get('timer_task')
+            if task and not task.done():
+                task.cancel()
+            # Mark as finished instead of removing immediately - cleanup thread will handle it
+            game['status'] = 'finished'
+            game['last_activity'] = time.time()
+        except Exception as e:
+            logging.error(f"Error cleaning up pokemon game: {e}")
 
 # --- COMMANDS ---
 
@@ -1470,7 +1555,7 @@ async def draft_cmd(c, m):
         save_id_set(CHATS_FILE, {m.chat.id})
         save_id_set(USERS_FILE, {p1.id, p2.id})
 
-    game_id = f"{m.chat.id}_{random.randint(1000,9999)}"
+    game_id = f"{abs(m.chat.id)}_{int(time.time())}_{random.randint(1000,999999)}"
 
     # Include the filter in game data
     game = {
@@ -1682,36 +1767,59 @@ async def callbacks(c, q: CallbackQuery):
 
             # The original loop is fine, since game_id is globally unique.
             # We iterate through all games to find the one with the matching ID.
-            for _chat_id, chat_games in GAMES.items():
-                if gid_to_find in chat_games:
-                    game = chat_games[gid_to_find]
-                    gid = gid_to_find
-                    break
+            try:
+                for _chat_id, chat_games in GAMES.items():
+                    if gid_to_find in chat_games:
+                        game = chat_games[gid_to_find]
+                        gid = gid_to_find
+                        break
+            except Exception as e:
+                logging.error(f"Error searching for game: {e}")
+                game = None
 
             if not game:
                 try:
-                    # This is the message seen in the screenshot, triggered when the game isn't found.
                     await q.edit_message_text("⏳ Game has expired or was canceled.", reply_markup=None)
                 except:
-                    await q.answer("Game expired.", show_alert=True)
+                    try:
+                        await q.answer("Game expired.", show_alert=True)
+                    except:
+                        logging.warning(f"Could not answer callback for expired game")
                 return
             # --- END NEW PARSING LOGIC ---
 
             uid = q.from_user.id
-            game['last_activity'] = time.time()
+            try:
+                game['last_activity'] = time.time()
+            except Exception as e:
+                logging.error(f"Error updating game activity: {e}")
+                return
 
             # --- POKEMON DRAFT CALLBACKS ---
             if action == "paccept":
-                if uid != game["p2"]["id"]: return await q.answer("❌ This challenge is not for you.", show_alert=True)
-                game['status'] = 'active'
-                await pokemon_show_draw_menu(c, q.message, game, gid)
-                return await q.answer("Challenge accepted!")
+                try:
+                    if uid != game["p2"]["id"]: 
+                        return await q.answer("❌ This challenge is not for you.", show_alert=True)
+                    game['status'] = 'active'
+                    await pokemon_show_draw_menu(c, q.message, game, gid)
+                    await q.answer("Challenge accepted!")
+                except Exception as e:
+                    logging.error(f"Error in paccept: {e}")
+                    await q.answer("❌ An error occurred.", show_alert=True)
+                return
             
             if action == "pstartbattle":
-                if uid not in [game["p1"]["id"], game["p2"]["id"]]: return await q.answer("You are not in this game.", show_alert=True)
-                if game.get("battle_started"): return await q.answer("The battle has already started!", show_alert=True)
-                game["battle_started"] = True
-                await pokemon_simulate_battle(c, q.message, game)
+                try:
+                    if uid not in [game["p1"]["id"], game["p2"]["id"]]: 
+                        return await q.answer("You are not in this game.", show_alert=True)
+                    if game.get("battle_started"): 
+                        return await q.answer("The battle has already started!", show_alert=True)
+                    game["battle_started"] = True
+                    await pokemon_simulate_battle(c, q.message, game)
+                except Exception as e:
+                    logging.error(f"Error in pstartbattle: {e}")
+                    await q.answer("❌ Battle error.", show_alert=True)
+                return
                 return
 
             if action == "pdraw":
@@ -1865,61 +1973,87 @@ async def callbacks(c, q: CallbackQuery):
                 return
 
             if action == "startrpg":
-                player_key = parts[3] # "p1" or "p2"
-                is_p1 = (player_key == "p1")
-                with GAMES_LOCK:
-                    if (is_p1 and uid == game["p1"]["id"]): game["ready"]["p1"] = True
-                    elif (not is_p1 and uid == game["p2"]["id"]): game["ready"]["p2"] = True
-                    else: return await q.answer("❌ Wrong button.", show_alert=True)
+                try:
+                    player_key = gid_parts[3] if len(gid_parts) > 3 else None  # "p1" or "p2"
+                    if not player_key:
+                        return await q.answer("❌ Invalid action.", show_alert=True)
+                    
+                    is_p1 = (player_key == "p1")
+                    with GAMES_LOCK:
+                        if (is_p1 and uid == game["p1"]["id"]): 
+                            game["ready"]["p1"] = True
+                        elif (not is_p1 and uid == game["p2"]["id"]): 
+                            game["ready"]["p2"] = True
+                        else: 
+                            return await q.answer("❌ Wrong button.", show_alert=True)
 
-                    if game.get("ready", {}).get("p1") and game.get("ready", {}).get("p2") and not game.get("battle_started"):
-                        game["battle_started"] = True
-                        await simulate_battle(c, q.message, game)
-                    else:
-                        await finish_game_ui(c, q.message, game, gid)
-                        await q.answer("✅ Ready! Waiting...")
+                        if game.get("ready", {}).get("p1") and game.get("ready", {}).get("p2") and not game.get("battle_started"):
+                            game["battle_started"] = True
+                            await simulate_battle(c, q.message, game)
+                        else:
+                            await finish_game_ui(c, q.message, game, gid)
+                            await q.answer("✅ Ready! Waiting...")
+                except Exception as e:
+                    logging.error(f"Error in startrpg: {e}")
+                    await q.answer("❌ An error occurred.", show_alert=True)
                 return
 
-            if uid != game["turn"]: return await q.answer("⏳ Not your turn!", show_alert=True)
+            if uid != game["turn"]: 
+                return await q.answer("⏳ Not your turn!", show_alert=True)
 
             if action == "draw":
-                pool = SERIES_MAP.get(game.get("filter"), ANIME_CHARACTERS)
-                available = [x for x in pool if x not in game["used_chars"]]
-                if not available: return await q.answer("❌ Pool empty!", show_alert=True)
+                try:
+                    pool = SERIES_MAP.get(game.get("filter"), ANIME_CHARACTERS)
+                    available = [x for x in pool if x not in game["used_chars"]]
+                    if not available: 
+                        return await q.answer("❌ Pool empty!", show_alert=True)
 
-                char = random.choice(available)
-                game["current_draw"] = char
-                await show_assignment_menu(c, q.message, game, char, gid)
+                    char = random.choice(available)
+                    game["current_draw"] = char
+                    await show_assignment_menu(c, q.message, game, char, gid)
+                except Exception as e:
+                    logging.error(f"Error in draw: {e}")
+                    await q.answer("❌ Draw error.", show_alert=True)
 
             elif action == "skip":
-                pkey = "p1" if uid == game["p1"]["id"] else "p2"
-                if game[pkey]["skips"] > 0:
-                    game[pkey]["skips"] -= 1
-                    if game.get("current_draw"):
-                        game["used_chars"].append(game["current_draw"])
-                        game["current_draw"] = None
-                    switch_turn(game)
-                    await show_draw_menu(c, q.message, game, gid)
-                else:
-                    await q.answer("❌ No skips.", show_alert=True)
+                try:
+                    pkey = "p1" if uid == game["p1"]["id"] else "p2"
+                    if game[pkey]["skips"] > 0:
+                        game[pkey]["skips"] -= 1
+                        if game.get("current_draw"):
+                            game["used_chars"].append(game["current_draw"])
+                            game["current_draw"] = None
+                        switch_turn(game)
+                        await show_draw_menu(c, q.message, game, gid)
+                    else:
+                        await q.answer("❌ No skips.", show_alert=True)
+                except Exception as e:
+                    logging.error(f"Error in skip: {e}")
+                    await q.answer("❌ Skip error.", show_alert=True)
 
             elif action == "set":
-                role = gid_parts[3].replace('-', ' ') if len(gid_parts) > 3 else None # Restore spaces from safe format
-                if not role: return await q.answer("❌ Invalid role.", show_alert=True)
-                
-                char = game.get("current_draw")
-                if not char: return await q.answer("❌ Error.", show_alert=True)
+                try:
+                    role = gid_parts[3].replace('-', ' ') if len(gid_parts) > 3 else None  # Restore spaces from safe format
+                    if not role: 
+                        return await q.answer("❌ Invalid role.", show_alert=True)
+                    
+                    char = game.get("current_draw")
+                    if not char: 
+                        return await q.answer("❌ Error.", show_alert=True)
 
-                pkey = "p1" if uid == game["p1"]["id"] else "p2"
-                game[pkey]["team"][role] = char
-                game["used_chars"].append(char)
-                game["current_draw"] = None
+                    pkey = "p1" if uid == game["p1"]["id"] else "p2"
+                    game[pkey]["team"][role] = char
+                    game["used_chars"].append(char)
+                    game["current_draw"] = None
 
-                if len(game["p1"]["team"]) == 8 and len(game["p2"]["team"]) == 8:
-                    await finish_game_ui(c, q.message, game, gid)
-                else:
-                    switch_turn(game)
-                    await show_draw_menu(c, q.message, game, gid)
+                    if len(game["p1"]["team"]) == 8 and len(game["p2"]["team"]) == 8:
+                        await finish_game_ui(c, q.message, game, gid)
+                    else:
+                        switch_turn(game)
+                        await show_draw_menu(c, q.message, game, gid)
+                except Exception as e:
+                    logging.error(f"Error in set: {e}")
+                    await q.answer("❌ Assignment error.", show_alert=True)
 
         except Exception as e:
             logging.exception(f"Callback error: {e}") # Log with exception info
