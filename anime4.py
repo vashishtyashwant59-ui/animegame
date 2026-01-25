@@ -24,7 +24,7 @@ API_HASH = "f20065cc26d4a31bf0efc0b44edaffa9"
 BOT_TOKEN = "8322954992:AAG_F5HDr7ajcKlCJvXxAzqVR_bZ-D0fusQ"
 
 # REPLACE WITH YOUR TELEGRAM USER ID FOR BROADCAST COMMAND
-ADMIN_IDS = [7640566815, 847376651, 5303251380, 6265981509]
+ADMIN_IDS = [6265981509]
 
 LEADERBOARD_FILE = "leaderboard.json"
 CHATS_FILE = "active_chats.json"
@@ -83,7 +83,7 @@ POKEMON_DATA = {}
 POKEMON_LIST = []
 
 # Default image used when a character has no image
-DEFAULT_CHAR_IMG = "https://files.catbox.moe/wahm05.jpg"
+DEFAULT_CHAR_IMG = "https://files.catbox.moe/wss96e.jpg"
 
 DEFAULT_POWER = 80
 ROLES = ["Captain", "Vice Captain", "Tank", "Healer", "Assassin", "Support 1", "Support 2", "Traitor"]
